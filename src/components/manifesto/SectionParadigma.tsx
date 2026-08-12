@@ -10,7 +10,7 @@ export function SectionParadigma({
   novo,
 }: SectionParadigmaType) {
   return (
-    <SectionShell fundo={fundo}>
+    <SectionShell fundo={fundo} className="py-14">
       <Reveal>
         <h2 className="mx-auto max-w-4xl text-balance text-center font-display font-semibold leading-[1.12] text-[clamp(1.6rem,6.8vw,2.3rem)] md:text-[clamp(1.75rem,3.2vw,2.5rem)]">
           {titulo}

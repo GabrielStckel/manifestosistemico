@@ -22,12 +22,12 @@ export function Footer({
         </div>
 
         <div className="md:col-span-7">
-          <nav className="flex flex-wrap gap-x-6 gap-y-3">
+          <nav className="flex flex-wrap gap-x-6 gap-y-2">
             {links.map((l) => (
               <a
                 key={l.label}
                 href={l.href}
-                className="text-[13px] text-section-dark-fg/70 transition-colors hover:text-brass"
+                className="inline-flex min-h-11 items-center text-[13px] text-section-dark-fg/70 transition-colors hover:text-brass"
               >
                 {l.label}
               </a>

@@ -9,7 +9,7 @@ export function SectionSetenios({
   elos,
 }: SectionSeteniosType) {
   return (
-    <SectionShell fundo={fundo}>
+    <SectionShell fundo={fundo} className="py-14">
       <div className="grid gap-10 md:grid-cols-12 md:gap-12">
         <div className="md:col-span-5 md:sticky md:top-24 md:self-start">
           <Reveal>
