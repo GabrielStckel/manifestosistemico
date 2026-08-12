@@ -82,11 +82,31 @@ export type SectionComunidade = {
   texto: string;
 };
 
+export type Trilha = {
+  numero: string;
+  rotulo: string;
+  titulo: string;
+  texto: string;
+  /** Preenchido quando as capas existirem. Enquanto vazio, o card usa a capa tipográfica. */
+  poster?: { src: string; alt: string; width: number; height: number };
+  /** Selo opcional, ex.: conteúdo ainda não disponível. */
+  status?: string;
+};
+
+export type SectionTrilhas = {
+  kind: "trilhas";
+  fundo: Fundo;
+  titulo: string;
+  subtitulo: string;
+  trilhas: Trilha[];
+};
+
 export type ManifestoSection =
   | SectionMentiras
   | SectionSetenios
   | SectionParadigma
-  | SectionComunidade;
+  | SectionComunidade
+  | SectionTrilhas;
 
 export type ManifestoContent = {
   meta: Meta;
