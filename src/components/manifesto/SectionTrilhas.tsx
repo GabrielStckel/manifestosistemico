@@ -63,7 +63,7 @@ export function SectionTrilhas({
         </p>
       </Reveal>
 
-      <ul className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 md:mt-14 md:gap-7">
+      <ul className="mt-12 grid auto-rows-fr items-stretch gap-6 sm:grid-cols-2 md:mt-14 md:gap-7">
         {trilhas.map((trilha, i) => (
           <Reveal
             as="li"
