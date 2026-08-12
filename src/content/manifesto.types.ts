@@ -89,6 +89,28 @@ export type SectionColetivo = {
   texto: string;
 };
 
+export type SectionOferta = {
+  kind: "oferta";
+  fundo: Fundo;
+  titulo: string;
+  rotuloInclui: string;
+  inclui: string[];
+  preco: {
+    rotulo: string;
+    /** Preço "de" para comparação. Deixar ausente até haver histórico de venda. */
+    de?: string;
+    parcelado: string;
+    aVista: string;
+  };
+  cta: string;
+  garantia: {
+    rotulo: string;
+    texto: string;
+  };
+};
+
+
+
 export type Trilha = {
   numero: string;
   rotulo: string;
