@@ -63,7 +63,7 @@ export function Hero({
         />
 
         <h1
-          className="mt-5 whitespace-pre-line text-balance font-display text-[clamp(2rem,8.2vw,2.7rem)] font-semibold leading-[1.1] tracking-[-0.01em] md:mt-7 md:text-[clamp(2.4rem,4.6vw,3.6rem)] md:leading-[1.06] md:tracking-[-0.015em]"
+          className="mt-5 whitespace-pre-line text-balance font-display text-[clamp(1.85rem,7.3vw,2.5rem)] font-semibold leading-[1.1] tracking-[-0.01em] md:mt-7 md:text-[clamp(2.4rem,4.6vw,3.6rem)] md:leading-[1.06] md:tracking-[-0.015em]"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
           {h1}
