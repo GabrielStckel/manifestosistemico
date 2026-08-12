@@ -27,13 +27,8 @@ export type Hero = {
   cta: string;
   microtexto: string;
   pilulas: HeroPilula[];
-  imagem: {
-    alt: string;
-    width: number;
-    height: number;
-    placeholderLabel?: string;
-  };
 };
+
 
 export type Fundo = "dark" | "light" | "red";
 

@@ -16,138 +16,89 @@ export function Hero({
   cta,
   microtexto,
   pilulas,
-  imagem,
 }: HeroType) {
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-section-dark-bg px-5 pt-28 pb-12 text-section-dark-fg md:min-h-[88vh] md:px-0 md:pt-[7rem] md:pb-0">
+    <section className="relative flex min-h-[92svh] items-center overflow-hidden bg-section-dark-bg px-5 pb-16 pt-24 text-section-dark-fg sm:px-8 md:min-h-[88vh] md:pb-24 md:pt-28">
       {/* Camadas de fundo — todas decorativas */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, rgba(0,0,0,0.95) 0%, rgba(20,10,10,0.85) 45%, rgba(45,15,15,0.7) 100%)",
+            "linear-gradient(160deg, rgba(0,0,0,0.92) 0%, rgba(18,9,9,0.88) 50%, rgba(38,13,13,0.82) 100%)",
         }}
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 hidden md:block"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 60% at 55% 48%, var(--red-accent) 0%, transparent 55%), radial-gradient(45% 45% at 50% 42%, var(--red-deep) 0%, transparent 60%)",
-          opacity: 0.8,
+            "radial-gradient(55% 45% at 50% 45%, var(--red-accent) 0%, transparent 60%), radial-gradient(38% 32% at 50% 42%, var(--red-deep) 0%, transparent 65%)",
+          opacity: 0.42,
         }}
       />
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 h-[70svh] md:hidden"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 55% at 50% 38%, var(--red-accent) 0%, transparent 62%), radial-gradient(40% 40% at 50% 32%, var(--red-deep) 0%, transparent 68%)",
-          opacity: 0.85,
+            "radial-gradient(100% 80% at 50% 45%, transparent 50%, rgba(0,0,0,0.55) 100%)",
         }}
       />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 hidden md:block"
-        style={{
-          background:
-            "radial-gradient(110% 85% at 25% 35%, transparent 55%, rgba(0,0,0,0.35) 100%)",
-        }}
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black md:hidden"
-      />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 md:grid-cols-12 md:px-8 md:gap-8">
-        {/* Coluna de texto */}
-        <div className="md:col-span-6">
-          <span className="hidden max-w-[420px] rounded-pill border border-brass/40 bg-brass/10 px-3 py-1 text-[10px] font-semibold uppercase leading-[1.5] tracking-[0.14em] text-brass md:inline-block">
-            {badge}
-          </span>
+      <div className="relative z-10 mx-auto w-full max-w-3xl text-center">
+        <p className="mx-auto max-w-none text-[10px] font-semibold uppercase leading-[1.7] tracking-[0.1em] text-brass sm:text-[11px] sm:tracking-[0.24em]">
+          {badge}
+        </p>
 
-          <h1
-            className="mt-5 whitespace-pre-line text-balance font-display text-[clamp(1.75rem,7vw,2.5rem)] font-semibold leading-[1.15] md:mt-4 md:text-[clamp(1.75rem,3.3vw,2.5rem)] md:leading-[1.1]"
-            style={{ textShadow: "var(--text-shadow-hero)" }}
-          >
-            {h1}
-          </h1>
+        <div aria-hidden="true" className="mx-auto mt-6 h-px w-10 bg-brass/50" />
 
-          <p
-            className="mt-4 max-w-[46ch] text-[15px] leading-relaxed text-section-dark-fg/85 md:mt-4 md:text-[16px]"
-            style={{ textShadow: "var(--text-shadow-hero)" }}
-          >
-            {subtitulo}
-          </p>
+        <h1
+          className="mt-6 whitespace-pre-line text-balance font-display text-[clamp(1.85rem,7.2vw,2.6rem)] font-semibold leading-[1.14] md:text-[clamp(2.1rem,4vw,3.1rem)] md:leading-[1.08]"
+          style={{ textShadow: "var(--text-shadow-hero)" }}
+        >
+          {h1}
+        </h1>
 
-          <p
-            className="hidden md:mt-3 md:block md:max-w-[52ch] md:text-[15px] md:leading-[1.6] text-section-dark-fg/70"
-            style={{ textShadow: "var(--text-shadow-hero)" }}
-          >
-            {apoio}
-          </p>
+        <p
+          className="mx-auto mt-6 max-w-[48ch] text-[15.5px] leading-relaxed text-section-dark-fg/85 md:mt-7 md:text-[17px]"
+          style={{ textShadow: "var(--text-shadow-hero)" }}
+        >
+          {subtitulo}
+        </p>
 
-          <a
-            href="#oferta"
-            className="mt-7 flex w-full max-w-[460px] min-h-[56px] items-center justify-center gap-2 rounded-cta bg-red-primary px-6 py-4 text-[15px] font-bold uppercase tracking-wide text-on-red shadow-lg shadow-red-deep/40 transition-colors hover:bg-red-primary-hover md:mt-6 md:max-w-[420px]"
-          >
-            {cta}
-            <ArrowRight className="h-4 w-4" />
-          </a>
+        <p
+          className="mx-auto hidden text-section-dark-fg/70 md:mt-4 md:block md:max-w-[62ch] md:text-[15px] md:leading-[1.65]"
+          style={{ textShadow: "var(--text-shadow-hero)" }}
+        >
+          {apoio}
+        </p>
 
-          <p className="mt-3 max-w-[460px] text-[14px] leading-snug text-muted-foreground">
-            {microtexto}
-          </p>
+        <a
+          href="#oferta"
+          className="mx-auto mt-9 flex min-h-[56px] w-full max-w-[420px] items-center justify-center gap-2 rounded-cta bg-red-primary px-6 py-4 text-center text-[14.5px] font-bold uppercase leading-snug tracking-wide text-on-red shadow-lg shadow-red-deep/40 transition-colors hover:bg-red-primary-hover md:mt-10 md:text-[15px]"
+        >
+          {cta}
+          <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0" />
+        </a>
 
-          <div className="mt-7 flex flex-wrap gap-2 md:mt-8">
-            {pilulas.map((p) => {
-              const Icon = ICONS[p.icon];
-              return (
-                <span
-                  key={p.icon + p.label}
-                  className="inline-flex items-center gap-2 rounded-pill border border-white/12 bg-black/40 px-3 py-1.5 text-[13px] font-medium text-section-dark-fg"
-                >
-                  <Icon className="h-3.5 w-3.5 text-brass" />
-                  {p.label}
-                </span>
-              );
-            })}
-          </div>
-        </div>
+        <p className="mx-auto mt-4 max-w-[42ch] text-[13px] leading-snug text-muted-foreground">
+          {microtexto}
+        </p>
 
-        {/* Coluna de imagem — desktop apenas */}
-        <div className="hidden md:col-span-6 md:block">
-          {/*
-            <picture>
-              <source
-                srcSet="/hero-540w.avif 540w, /hero-1080w.avif 1080w"
-                sizes="(max-width: 768px) 90vw, 520px"
-                type="image/avif"
-              />
-              <source
-                srcSet="/hero-540w.webp 540w, /hero-1080w.webp 1080w"
-                sizes="(max-width: 768px) 90vw, 520px"
-                type="image/webp"
-              />
-              <img
-                src="/hero-1080w.webp"
-                alt={imagem.alt}
-                width={imagem.width}
-                height={imagem.height}
-                fetchPriority="high"
-                loading="eager"
-                decoding="async"
-                className="h-auto w-full rounded-lg border border-white/10 object-cover"
-                sizes="(max-width: 768px) 90vw, 520px"
-              />
-            </picture>
-          */}
-          {imagem.placeholderLabel && (
-            <div className="flex aspect-[4/5] w-full items-center justify-center rounded-lg border border-white/10 bg-surface-dark/60">
-              <span className="text-sm text-muted-foreground">{imagem.placeholderLabel}</span>
-            </div>
-          )}
+        <div className="mx-auto mt-10 grid max-w-[440px] grid-cols-2 gap-x-5 gap-y-3 border-t border-white/10 pt-7 sm:flex sm:max-w-none sm:flex-wrap sm:justify-center sm:gap-x-7 sm:border-t-0 sm:pt-0">
+          {pilulas.map((p) => {
+            const Icon = ICONS[p.icon];
+            return (
+              <span
+                key={p.icon + p.label}
+                className="flex items-center gap-2 text-left text-[12.5px] font-medium text-section-dark-fg/80 sm:text-[13px]"
+              >
+                <Icon aria-hidden="true" className="h-3.5 w-3.5 shrink-0 text-brass" />
+                {p.label}
+              </span>
+            );
+          })}
         </div>
       </div>
     </section>
