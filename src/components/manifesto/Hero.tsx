@@ -85,7 +85,7 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
         </p>
 
         {apoio ? (
-          <p className="mt-4 max-w-[40ch] text-[13.5px] leading-[1.6] text-section-dark-fg/60 md:max-w-[62ch] md:text-[16px] md:leading-[1.7]">
+          <p className="mt-4 max-w-[40ch] whitespace-pre-line text-[13.5px] leading-[1.6] text-section-dark-fg/60 md:max-w-[62ch] md:text-[16px] md:leading-[1.7]">
             {apoio}
           </p>
         ) : null}
