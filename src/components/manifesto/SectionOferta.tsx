@@ -14,7 +14,7 @@ export function SectionOferta({
   garantia,
 }: SectionOfertaType) {
   return (
-    <SectionShell fundo={fundo} id="oferta">
+    <SectionShell fundo={fundo} id="oferta" className="py-14">
       <Reveal>
         <h2 className="mx-auto max-w-2xl text-balance text-center font-display font-semibold leading-[1.12] text-[clamp(1.8rem,7vw,2.4rem)] md:text-[clamp(2rem,3.6vw,2.8rem)]">
           {titulo}
