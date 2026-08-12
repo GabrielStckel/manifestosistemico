@@ -78,7 +78,7 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
         </div>
 
         <p
-          className="mt-6 max-w-[44ch] text-[15.5px] leading-[1.65] text-section-dark-fg/90 md:mt-7 md:max-w-[58ch] md:text-[20px] md:leading-[1.65]"
+          className="mt-6 max-w-[44ch] whitespace-pre-line text-[15.5px] leading-[1.65] text-section-dark-fg/90 md:mt-7 md:max-w-[58ch] md:text-[20px] md:leading-[1.65]"
           style={{ textShadow: "var(--text-shadow-soft)" }}
         >
           {subtitulo}
