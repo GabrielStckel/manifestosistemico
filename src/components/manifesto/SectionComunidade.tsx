@@ -7,22 +7,68 @@ export function SectionComunidade({
   titulo,
   texto,
 }: SectionComunidadeType) {
+  const [primeiraLetra, ...resto] = texto;
+
   return (
-    <SectionShell fundo={fundo} className="md:py-32">
-      <div className="mx-auto max-w-3xl text-center">
-        <span aria-hidden className="mx-auto block h-px w-16 bg-brass/60" />
+    <SectionShell fundo={fundo} className="overflow-hidden md:py-36">
+      {/* Luz quente central */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(60% 45% at 50% 12%, var(--brass) 0%, transparent 70%)",
+          opacity: 0.14,
+        }}
+      />
+
+      <div className="relative mx-auto max-w-3xl text-center">
+        {/* Ornamento superior */}
+        <div
+          aria-hidden="true"
+          className="flex items-center justify-center gap-3"
+        >
+          <span className="h-px w-12 bg-gradient-to-r from-transparent to-brass-ink/60 md:w-20" />
+          <span className="h-1.5 w-1.5 rotate-45 border border-brass-ink/70" />
+          <span className="h-px w-12 bg-gradient-to-l from-transparent to-brass-ink/60 md:w-20" />
+        </div>
 
         <Reveal>
-          <h2 className="mt-8 whitespace-pre-line text-balance font-display font-semibold leading-[1.15] text-section-light-fg text-[clamp(1.6rem,6.5vw,2.2rem)] md:text-[clamp(1.8rem,3.2vw,2.5rem)]">
+          <h2 className="mt-8 whitespace-pre-line text-balance font-display text-[clamp(1.65rem,6.6vw,2.25rem)] font-semibold leading-[1.14] tracking-[-0.015em] text-section-light-fg md:mt-10 md:text-[clamp(2rem,3.4vw,2.8rem)] md:leading-[1.08]">
             {titulo}
           </h2>
         </Reveal>
 
-        <Reveal delay={120}>
-          <p className="mx-auto mt-8 max-w-[58ch] text-justify hyphens-auto text-[16.5px] leading-[1.75] text-section-light-fg/85 sm:text-[18px] sm:leading-[1.8] md:text-[20px]">
-            {texto}
-          </p>
+        <Reveal delay={100}>
+          <div className="relative mx-auto mt-10 max-w-[60ch] md:mt-12">
+            {/* Cantoneiras em latão */}
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -left-3 -top-3 h-6 w-6 border-l border-t border-brass-ink/45 md:-left-6 md:-top-6 md:h-10 md:w-10"
+            />
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -bottom-3 -right-3 h-6 w-6 border-b border-r border-brass-ink/45 md:-bottom-6 md:-right-6 md:h-10 md:w-10"
+            />
+
+            <p className="text-left text-[16.5px] leading-[1.8] text-section-light-fg/85 sm:text-[18px] md:text-justify md:hyphens-auto md:text-[20px] md:leading-[1.85]">
+              <span className="float-left mr-3 mt-1 font-display text-[3.1rem] font-semibold leading-[0.78] text-brass-ink md:mr-4 md:text-[4.2rem]">
+                {primeiraLetra}
+              </span>
+              {resto.join("")}
+            </p>
+          </div>
         </Reveal>
+
+        {/* Ornamento inferior */}
+        <div
+          aria-hidden="true"
+          className="mt-12 flex items-center justify-center gap-3 md:mt-16"
+        >
+          <span className="h-px w-16 bg-gradient-to-r from-transparent to-brass-ink/40 md:w-24" />
+          <span className="h-1 w-1 rotate-45 bg-brass-ink/60" />
+          <span className="h-px w-16 bg-gradient-to-l from-transparent to-brass-ink/40 md:w-24" />
+        </div>
       </div>
     </SectionShell>
   );
