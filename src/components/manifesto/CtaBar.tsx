@@ -1,4 +1,6 @@
+import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+
 
 export function CtaBar({ label }: { label: string }) {
   const [visivel, setVisivel] = useState(false);
