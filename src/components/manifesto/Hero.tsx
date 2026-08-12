@@ -39,8 +39,8 @@ export function Hero({
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(55% 45% at 50% 45%, var(--red-accent) 0%, transparent 60%), radial-gradient(38% 32% at 50% 42%, var(--red-deep) 0%, transparent 65%)",
-          opacity: 0.42,
+            "radial-gradient(62% 52% at 50% 44%, var(--red-accent) 0%, transparent 66%), radial-gradient(42% 34% at 50% 40%, var(--red-deep) 0%, transparent 70%)",
+          opacity: 0.24,
         }}
       />
       <div
@@ -52,29 +52,29 @@ export function Hero({
         }}
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-3xl text-center">
-        <p className="mx-auto max-w-none text-[10px] font-semibold uppercase leading-[1.7] tracking-[0.1em] text-brass sm:text-[11px] sm:tracking-[0.24em]">
+      <div className="relative z-10 mx-auto w-full max-w-3xl text-center md:max-w-4xl">
+        <p className="mx-auto max-w-none text-[10px] font-semibold uppercase leading-[1.7] tracking-[0.1em] text-brass/90 sm:text-[11px] sm:tracking-[0.28em]">
           {badge}
         </p>
 
-        <div aria-hidden="true" className="mx-auto mt-5 h-px w-10 bg-brass/50 md:mt-6" />
+        <div aria-hidden="true" className="mx-auto mt-5 h-px w-10 bg-brass/40 md:mt-7" />
 
         <h1
-          className="mt-5 whitespace-pre-line text-balance font-display text-[clamp(1.9rem,7.6vw,2.6rem)] font-semibold leading-[1.12] md:mt-6 md:text-[clamp(2.1rem,4vw,3.1rem)] md:leading-[1.08]"
+          className="mt-5 whitespace-pre-line text-balance font-display text-[clamp(1.9rem,7.6vw,2.6rem)] font-semibold leading-[1.12] md:mt-7 md:text-[clamp(2.4rem,4.6vw,3.6rem)] md:leading-[1.06] md:tracking-[-0.015em]"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
           {h1}
         </h1>
 
         <p
-          className="mx-auto mt-5 max-w-[36ch] text-[15.5px] leading-[1.6] text-section-dark-fg/85 md:mt-7 md:max-w-[48ch] md:text-[17px] md:leading-relaxed"
+          className="mx-auto mt-5 max-w-[36ch] text-[15.5px] leading-[1.6] text-section-dark-fg/90 md:mt-7 md:max-w-[46ch] md:text-[18px] md:leading-relaxed"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
           {subtitulo}
         </p>
 
         <p
-          className="mx-auto hidden text-section-dark-fg/70 md:mt-4 md:block md:max-w-[62ch] md:text-[15px] md:leading-[1.65]"
+          className="mx-auto hidden text-section-dark-fg/65 md:mt-5 md:block md:max-w-[64ch] md:text-[15px] md:leading-[1.7]"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
           {apoio}
@@ -82,17 +82,20 @@ export function Hero({
 
         <a
           href="#oferta"
-          className="mx-auto mt-9 flex min-h-[56px] w-full max-w-[420px] items-center justify-center gap-2 rounded-cta bg-red-primary px-6 py-4 text-center text-[14.5px] font-bold uppercase leading-snug tracking-wide text-on-red shadow-lg shadow-red-deep/40 transition-colors hover:bg-red-primary-hover md:mt-10 md:text-[15px]"
+          className="group mx-auto mt-9 flex min-h-[56px] w-full max-w-[420px] items-center justify-center gap-2 rounded-cta bg-red-primary px-6 py-4 text-center text-[14.5px] font-bold uppercase leading-snug tracking-wide text-on-red shadow-[0_18px_50px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_22px_60px_-16px_var(--red-accent)] md:mt-11 md:text-[15px]"
         >
           {cta}
-          <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0" />
+          <ArrowRight
+            aria-hidden="true"
+            className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
+          />
         </a>
 
-        <p className="mx-auto mt-3.5 max-w-[32ch] text-[12.5px] leading-snug text-muted-foreground md:mt-4 md:max-w-[42ch] md:text-[13px]">
+        <p className="mx-auto mt-3.5 max-w-[32ch] text-[12.5px] leading-snug text-muted-foreground md:mt-4 md:max-w-none md:text-[13px]">
           {microtexto}
         </p>
 
-        <div className="mx-auto mt-8 grid max-w-[360px] grid-cols-2 gap-x-4 gap-y-3.5 border-t border-white/10 pt-6 sm:flex sm:max-w-none sm:flex-wrap sm:justify-center sm:gap-x-7 sm:border-t-0 sm:pt-0 md:mt-10">
+        <div className="mx-auto mt-8 grid max-w-[360px] grid-cols-2 gap-x-4 gap-y-3.5 border-t border-white/10 pt-6 sm:flex sm:max-w-none sm:flex-wrap sm:justify-center sm:gap-x-7 sm:border-t-0 sm:pt-0 md:mt-12 md:gap-x-8 md:border-t md:border-white/10 md:pt-7 md:text-[12.5px]">
           {pilulas.map((p) => {
             const Icon = ICONS[p.icon];
             return (
