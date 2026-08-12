@@ -34,7 +34,7 @@ export function SectionParadigma({
         </Reveal>
 
         {/* Divisor de transição — decorativo */}
-        <div aria-hidden className="md:col-span-2">
+        <div aria-hidden className="md:col-span-2 md:self-stretch">
           <div className="flex items-center gap-4 py-2 md:hidden">
             <span className="h-px flex-1 bg-brass/25" />
             <ArrowDown className="h-5 w-5 text-brass/70" />
