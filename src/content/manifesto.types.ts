@@ -11,8 +11,7 @@ export type Topbar = {
 };
 
 export type CtaBar = {
-  texto: string;
-  botao: string;
+  label: string;
 };
 
 export type HeroPilula = {
@@ -130,6 +129,23 @@ export type SectionTrilhas = {
   trilhas: Trilha[];
 };
 
+export type SectionFaq = {
+  kind: "faq";
+  fundo: Fundo;
+  titulo: string;
+  itens: { pergunta: string; resposta: string }[];
+};
+
+export type SectionRodape = {
+  kind: "rodape";
+  fundo: Fundo;
+  marca: string;
+  descricao: string;
+  links: { label: string; href: string }[];
+  aviso: string;
+  copyright: string;
+};
+
 export type ManifestoSection =
   | SectionMentiras
   | SectionSetenios
@@ -137,7 +153,9 @@ export type ManifestoSection =
   | SectionComunidade
   | SectionColetivo
   | SectionTrilhas
-  | SectionOferta;
+  | SectionOferta
+  | SectionFaq
+  | SectionRodape;
 
 export type ManifestoContent = {
   meta: Meta;

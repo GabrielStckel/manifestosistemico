@@ -12,8 +12,7 @@ export const manifesto: ManifestoContent = {
     rotulo: "Comunidade",
   },
   ctaBar: {
-    texto: "",
-    botao: "",
+    label: "Quero entrar para o Manifesto",
   },
   hero: {
     badge: "O DESPERTAR DE UM NOVO MODO DE FUNCIONAMENTO DA CONSCIÊNCIA",
@@ -209,6 +208,46 @@ export const manifesto: ManifestoContent = {
           "Experimente a plataforma, assista às trilhas e participe da comunidade. Se em até 7 dias você sentir que a profundidade do Manifesto não é para você, basta solicitar o reembolso e devolveremos 100% do seu investimento.",
       },
     },
+    {
+      kind: "faq",
+      fundo: "light",
+      titulo: "Perguntas frequentes",
+      itens: [
+        {
+          pergunta: "O que \u00e9 a \"vis\u00e3o sist\u00eamica\" que voc\u00eas defendem?",
+          resposta:
+            "\u00c9 uma abordagem cient\u00edfica e filos\u00f3fica que compreende que o indiv\u00edduo n\u00e3o funciona de forma isolada, sendo influenciado por din\u00e2micas invis\u00edveis do sistema familiar e paradigmas culturais inconscientes.",
+        },
+        {
+          pergunta: "Eu j\u00e1 fa\u00e7o terapia. O Manifesto substitui o meu processo?",
+          resposta:
+            "N\u00e3o substitui, mas potencializa. O Manifesto traz uma mudan\u00e7a de paradigma filos\u00f3fico que ajuda a identificar causas maiores e for\u00e7as motrizes, acelerando resultados terap\u00eauticos.",
+        },
+        {
+          pergunta: "N\u00e3o tenho conhecimentos de f\u00edsica ou filosofia. Vou conseguir acompanhar?",
+          resposta:
+            "Sim. O Jonas Peres utiliza conceitos profundos de forma did\u00e1tica, conectando a teoria a exemplos pr\u00e1ticos do dia a dia (relacionamentos, carreira e dinheiro).",
+        },
+        {
+          pergunta: "Como funciona o formato de streaming?",
+          resposta:
+            "Funciona como as plataformas de v\u00eddeo favoritas. Todo o conte\u00fado \u00e9 organizado em trilhas (temporadas) dentro do Hotmart Club, acess\u00edveis de qualquer dispositivo.",
+        },
+      ],
+    },
+    {
+      kind: "rodape",
+      fundo: "dark",
+      marca: "Manifesto Sist\u00eamico",
+      descricao: "Uma comunidade de evolu\u00e7\u00e3o cont\u00ednua com Jonas Peres.",
+      links: [
+        { label: "Pol\u00edtica de privacidade", href: "__URL_PRIVACIDADE__" },
+        { label: "Termos de uso", href: "__URL_TERMOS__" },
+        { label: "Suporte", href: "__URL_SUPORTE__" },
+      ],
+      aviso:
+        "Este produto n\u00e3o garante a obten\u00e7\u00e3o de resultados. Qualquer refer\u00eancia ao desempenho de uma estrat\u00e9gia n\u00e3o deve ser interpretada como garantia de resultados. O conte\u00fado \u00e9 de natureza educacional e n\u00e3o substitui acompanhamento m\u00e9dico, psicol\u00f3gico ou psiqui\u00e1trico.",
+      copyright: "\u00a9 Manifesto Sist\u00eamico. Todos os direitos reservados.",
+    },
   ],
 };
-
