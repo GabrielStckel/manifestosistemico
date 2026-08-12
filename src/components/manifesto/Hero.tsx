@@ -62,10 +62,14 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
         </p>
 
         <h1
-          className="mt-7 whitespace-pre-line text-balance font-display text-[clamp(1.95rem,7.6vw,2.6rem)] font-semibold leading-[1.08] tracking-[-0.015em] md:mt-9 md:max-w-[19ch] md:text-[clamp(2.5rem,4.6vw,3.5rem)] md:leading-[1.04] md:tracking-[-0.02em]"
+          className="mt-7 whitespace-pre-line text-balance font-display text-[clamp(1.95rem,7.6vw,2.6rem)] font-semibold leading-[1.18] tracking-[-0.015em] md:mt-9 md:max-w-[20ch] md:text-[clamp(2.5rem,4.6vw,3.5rem)] md:leading-[1.14] md:tracking-[-0.02em]"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
-          {h1}
+          <span className="block">Por que você sabe exatamente o que precisa fazer,</span>
+          <span className="mt-1 block md:mt-2">
+            mas continua{" "}
+            <span className="font-semibold text-brass">paralisado no mesmo lugar?</span>
+          </span>
         </h1>
 
         <div
