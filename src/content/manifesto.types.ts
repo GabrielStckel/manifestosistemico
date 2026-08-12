@@ -36,9 +36,26 @@ export type Hero = {
   };
 };
 
+export type Fundo = "dark" | "light" | "red";
+
+export type SectionMentiras = {
+  kind: "mentiras";
+  fundo: Fundo;
+  titulo: string;
+  itens: {
+    rotulo: string;
+    mentira: string;
+    rotuloVerdade: string;
+    verdade: string;
+  }[];
+};
+
+export type ManifestoSection = SectionMentiras;
+
 export type ManifestoContent = {
   meta: Meta;
   topbar: Topbar;
   ctaBar: CtaBar;
   hero: Hero;
+  sections: ManifestoSection[];
 };

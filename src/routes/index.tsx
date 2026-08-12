@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Topbar } from "../components/manifesto/Topbar";
-import { Hero } from "../components/manifesto/Hero";
+import { ManifestoPage } from "../components/manifesto/ManifestoPage";
 import { manifesto } from "../content/manifesto";
 
 export const Route = createFileRoute("/")({
@@ -16,10 +15,5 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  return (
-    <main className="relative">
-      <Topbar {...manifesto.topbar} />
-      <Hero {...manifesto.hero} />
-    </main>
-  );
+  return <ManifestoPage content={manifesto} />;
 }

@@ -45,4 +45,29 @@ export const manifesto: ManifestoContent = {
       placeholderLabel: "Foto do apresentador",
     },
   },
+
+  sections: [
+    {
+      kind: "mentiras",
+      fundo: "dark",
+      titulo:
+        "As duas grandes mentiras que contaram sobre o seu desenvolvimento pessoal:",
+      itens: [
+        {
+          rotulo: "Mentira 01",
+          mentira: "O tempo cura todas as feridas",
+          rotuloVerdade: "A verdade",
+          verdade:
+            "O tempo não cura nada. Quando você tenta ignorar uma dor ou conflito, seu inconsciente funciona como uma lixeira mental. Ele armazena essa informação e continua operando silenciosamente 24 horas por dia, ativando mecanismos invisíveis de evitação e autossabotagem ao menor sinal de risco.",
+        },
+        {
+          rotulo: "Mentira 02",
+          mentira: "Você só precisa ressignificar o seu passado",
+          rotuloVerdade: "A verdade",
+          verdade:
+            "A ressignificação intelectual é apenas uma remediação paliativa. Ela atenua o sintoma temporariamente, mas não cura a dinâmica oculta. A cura real não vem de racionalizar ou criar uma \"bela história\" sobre o que doeu; vem de integrar o acontecimento, pacificar o sistema e extrair a função exata daquele episódio na sua vida para seguir adiante.",
+        },
+      ],
+    },
+  ],
 };
