@@ -5,31 +5,36 @@ export const manifesto: ManifestoContent = {
     title:
       "Manifesto Sist\u00eamico \u2014 Atualize os princ\u00edpios que governam suas decis\u00f5es",
     description:
-      "Comunidade de desenvolvimento pessoal fundamentada em ci\u00eancia, filosofia e vis\u00e3o sist\u00eamica. Trilhas pr\u00e1ticas para romper a paralisia e tomar a sua vida.",
+      "Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente.",
     ogTitle:
       "Manifesto Sist\u00eamico \u2014 Atualize os princ\u00edpios que governam suas decis\u00f5es",
     ogDescription:
-      "Comunidade de desenvolvimento pessoal fundamentada em ci\u00eancia, filosofia e vis\u00e3o sist\u00eamica. Trilhas pr\u00e1ticas para romper a paralisia e tomar a sua vida.",
+      "Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente.",
   },
+
   topbar: {
     marca: "Manifesto Sistêmico",
   },
   ctaBar: {
-    label: "Quero Entrar para o Manifesto Sistêmico",
+    label: "Entrar para o Manifesto",
   },
+
   hero: {
     badge: "O DESPERTAR DE UM NOVO MODO DE FUNCIONAMENTO DA CONSCIÊNCIA",
 
     h1: "Por que você sabe exatamente o que precisa fazer, mas continua paralisado no mesmo lugar?",
 
     subtitulo:
-      "Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente. O Manifesto Sistêmico é a primeira comunidade de desenvolvimento pessoal fundamentado na ciência, na filosofia e na visão sistêmica profunda. Acesse trilhas práticas para desarmar o medo de sofrer, romper a resistência à mudança e tomar a sua vida.",
+      "Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente.",
 
-    cta: "Quero Entrar para o Manifesto Sistêmico",
+    apoio:
+      "Trilhas práticas para desarmar o medo de sofrer, romper a resistência à mudança e tomar a sua vida.",
 
-    microtexto:
-      "Assinatura anual com acesso imediato a todas as trilhas no Hotmart Club.",
+    cta: "Entrar para o Manifesto",
+
+    microtexto: "Acesso imediato a todas as trilhas no Hotmart Club. 2 anos de acesso.",
   },
+
 
 
   sections: [
@@ -94,8 +99,9 @@ export const manifesto: ManifestoContent = {
       novo: {
         nome: "Paradigma Sistêmico",
         transicao:
-          "O Manifesto Sistêmico propõe uma transição profunda para o Paradigma Sistêmico, fundamentado na ciência moderna e na percepção, onde o funcionamento compreende:",
+          "O Manifesto Sistêmico propõe uma transição profunda para o Paradigma Sistêmico, onde o funcionamento compreende:",
         itens: [
+
           {
             titulo: "Complexidade (Causalidade Circular)",
             texto:
@@ -181,11 +187,13 @@ export const manifesto: ManifestoContent = {
         "Materiais de Apoio e Exercícios Práticos para aplicação diária.",
       ],
       preco: {
-        rotulo: "Preço Especial de Lançamento:",
+        rotulo: "Condição exclusiva da imersão",
         parcelado: "12x de R$ 103,11",
-        aVista: "ou R$ 997,00 à vista no plano anual",
+        aVista: "ou R$ 997,00 à vista",
+        nota: "Condição exclusiva para quem participou da imersão O Silêncio. São 2 anos completos de acesso, em pagamento único — não é assinatura e não há renovação.",
       },
-      cta: "Quero Assinar o Manifesto e Tomar Minha Vida",
+      cta: "Quero tomar minha vida",
+
       garantia: {
         rotulo: "Garantia Incondicional de 7 dias",
         texto:
