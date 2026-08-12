@@ -25,44 +25,19 @@ const FAQ_LD = faqSection
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Manifesto Sistêmico — Uma comunidade de evolução contínua" },
-      {
-        name: "description",
-        content:
-          "Atualize os princípios inconscientes que governam suas decisões. Trilhas práticas fundamentadas em ciência, filosofia e visão sistêmica, com Jonas Peres. Acesso por 2 anos.",
-      },
-      {
-        property: "og:title",
-        content: "Manifesto Sistêmico — Uma comunidade de evolução contínua",
-      },
-      {
-        property: "og:description",
-        content:
-          "Atualize os princípios inconscientes que governam suas decisões. Trilhas práticas fundamentadas em ciência, filosofia e visão sistêmica, com Jonas Peres. Acesso por 2 anos.",
-      },
+      { title: manifesto.meta.title },
+      { name: "description", content: manifesto.meta.description },
+      { property: "og:title", content: manifesto.meta.ogTitle },
+      { property: "og:description", content: manifesto.meta.ogDescription },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
       { property: "og:site_name", content: "Manifesto Sistêmico" },
-      { property: "og:url", content: "__URL_PRODUCAO__" },
-      { property: "og:image", content: "__URL_OG_IMAGE__" },
+      { property: "og:url", content: "https://manifestosistemico.com.br/" },
       { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "twitter:title",
-        content: "Manifesto Sistêmico — Uma comunidade de evolução contínua",
-      },
-      {
-        name: "twitter:description",
-        content:
-          "Atualize os princípios inconscientes que governam suas decisões. Trilhas práticas fundamentadas em ciência, filosofia e visão sistêmica, com Jonas Peres. Acesso por 2 anos.",
-      },
-      { name: "twitter:image", content: "__URL_OG_IMAGE__" },
+      { name: "twitter:title", content: manifesto.meta.ogTitle },
+      { name: "twitter:description", content: manifesto.meta.ogDescription },
     ],
-    links: [
-      {
-        rel: "canonical",
-        href: "__URL_PRODUCAO__",
-      },
-    ],
+    links: [{ rel: "canonical", href: "https://manifestosistemico.com.br/" }],
     scripts: FAQ_LD
       ? [
           {
