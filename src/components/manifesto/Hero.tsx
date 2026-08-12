@@ -47,7 +47,7 @@ export function Hero({
       />
 
       <div className="relative z-10 mx-auto w-full max-w-3xl text-center">
-        <p className="mx-auto max-w-[34ch] text-[10px] font-semibold uppercase leading-[1.7] tracking-[0.2em] text-brass sm:max-w-none sm:text-[11px] sm:tracking-[0.24em]">
+        <p className="mx-auto max-w-[38ch] text-[10px] font-semibold uppercase leading-[1.7] tracking-[0.18em] text-brass sm:max-w-none sm:text-[11px] sm:tracking-[0.24em]">
           {badge}
         </p>
 
