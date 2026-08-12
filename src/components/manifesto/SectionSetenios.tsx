@@ -41,7 +41,7 @@ export function SectionSetenios({
           </Reveal>
 
           <Reveal delay={120}>
-            <p className="mx-auto mt-7 max-w-[60ch] text-left hyphens-auto md:text-justify text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base md:text-[18px] md:leading-[1.75]">
+            <p className="mx-auto mt-7 max-w-[60ch] text-left hyphens-auto md:text-justify text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base md:text-[17px] md:leading-[1.75]">
               {abertura}
             </p>
           </Reveal>
@@ -74,10 +74,10 @@ export function SectionSetenios({
               </span>
 
               <div className="rounded-lg border border-white/10 bg-gradient-to-b from-white/[0.055] to-white/[0.015] p-5 transition-colors hover:border-brass/35 md:p-7">
-                <h3 className="font-display text-[17px] font-semibold leading-snug text-section-dark-fg sm:text-[19px] md:text-[23px]">
+                <h3 className="font-display text-[17px] font-semibold leading-snug text-section-dark-fg sm:text-[19px] md:text-[20px]">
                   {elo.titulo}
                 </h3>
-                <p className="mt-3 max-w-[64ch] text-left hyphens-auto md:text-justify text-[15px] leading-relaxed text-section-dark-fg/75 sm:text-base md:text-[18px] md:leading-[1.75]">
+                <p className="mt-3 max-w-[64ch] text-left hyphens-auto md:text-justify text-[15px] leading-relaxed text-section-dark-fg/75 sm:text-base md:text-[17px] md:leading-[1.75]">
                   {elo.texto}
                 </p>
               </div>
