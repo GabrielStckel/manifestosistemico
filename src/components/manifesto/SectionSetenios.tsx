@@ -37,7 +37,7 @@ export function SectionSetenios({
               {i < elos.length - 1 ? (
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute left-[15px] top-9 bottom-0 w-px bg-brass/30"
+                  className="pointer-events-none absolute left-[15px] top-9 -bottom-1 w-px bg-brass/30"
                 />
               ) : null}
 
