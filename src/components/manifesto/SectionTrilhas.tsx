@@ -25,12 +25,12 @@ function Capa({ trilha }: { trilha: Trilha }) {
             className="absolute inset-0 opacity-[0.13] transition-opacity duration-300 group-hover:opacity-25"
             style={{
               background:
-                "radial-gradient(65% 65% at 50% 55%, var(--brass) 0%, transparent 62%)",
+                "radial-gradient(75% 50% at 50% 50%, var(--brass) 0%, transparent 70%)",
             }}
           />
           <span
             aria-hidden
-            className="relative font-display text-[52px] font-semibold leading-none text-brass/25 transition-colors duration-300 group-hover:text-brass/40 sm:text-[72px]"
+            className="relative font-display text-[34px] font-semibold leading-none text-brass/25 transition-colors duration-300 group-hover:text-brass/40 sm:text-[72px]"
           >
             {trilha.numero}
           </span>
