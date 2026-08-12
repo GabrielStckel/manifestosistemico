@@ -32,18 +32,18 @@ export function SectionSetenios({
               as="li"
               key={elo.titulo}
               delay={i * 120}
-              className="relative block pl-12 pb-10 last:pb-0"
+              className="relative block pl-11 pb-10 last:pb-0 md:pl-12"
             >
               {i < elos.length - 1 ? (
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute left-[15px] top-9 -bottom-1 w-px bg-brass/30"
+                  className="pointer-events-none absolute left-[13px] top-8 -bottom-1 w-px bg-brass/30 md:left-[15px] md:top-9"
                 />
               ) : null}
 
               <span
                 aria-hidden
-                className="absolute left-0 top-1 flex h-8 w-8 items-center justify-center rounded-full border border-brass/50 bg-section-light-bg text-[11px] font-semibold text-brass-ink"
+                className="absolute left-0 top-1 flex h-7 w-7 items-center justify-center rounded-full border border-brass/50 bg-section-light-bg text-[11px] font-semibold text-brass-ink md:h-8 md:w-8"
               >
                 {String(i + 1).padStart(2, "0")}
               </span>

@@ -28,7 +28,7 @@ export function SectionColetivo({
         <span aria-hidden className="mx-auto mt-8 block h-px w-16 bg-on-red/35" />
 
         <Reveal delay={120}>
-          <p className="mx-auto mt-8 max-w-[58ch] text-[16.5px] leading-[1.75] text-section-red-fg/90 sm:text-[18px] sm:leading-[1.8]">
+          <p className="mx-auto mt-8 max-w-[38ch] text-[16.5px] leading-[1.75] text-section-red-fg/90 sm:max-w-[58ch] sm:text-[18px] sm:leading-[1.8]">
             {texto}
           </p>
         </Reveal>

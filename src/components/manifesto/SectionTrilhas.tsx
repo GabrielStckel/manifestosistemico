@@ -7,7 +7,7 @@ import type {
 
 function Capa({ trilha }: { trilha: Trilha }) {
   return (
-    <div className="relative flex aspect-[16/9] items-center justify-center overflow-hidden border-b border-white/8 bg-black/50">
+    <div className="relative flex w-20 shrink-0 items-center justify-center self-stretch overflow-hidden border-r border-white/8 bg-black/50 sm:aspect-[16/9] sm:w-auto sm:self-auto sm:border-b sm:border-r-0">
       {trilha.poster ? (
         <img
           src={trilha.poster.src}
@@ -25,12 +25,12 @@ function Capa({ trilha }: { trilha: Trilha }) {
             className="absolute inset-0 opacity-[0.13] transition-opacity duration-300 group-hover:opacity-25"
             style={{
               background:
-                "radial-gradient(65% 65% at 50% 55%, var(--brass) 0%, transparent 62%)",
+                "radial-gradient(75% 50% at 50% 50%, var(--brass) 0%, transparent 70%)",
             }}
           />
           <span
             aria-hidden
-            className="relative font-display text-[52px] font-semibold leading-none text-brass/25 transition-colors duration-300 group-hover:text-brass/40 sm:text-[72px]"
+            className="relative font-display text-[34px] font-semibold leading-none text-brass/25 transition-colors duration-300 group-hover:text-brass/40 sm:text-[72px]"
           >
             {trilha.numero}
           </span>
@@ -63,7 +63,7 @@ export function SectionTrilhas({
         </p>
       </Reveal>
 
-      <ul className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 md:mt-14 md:gap-7">
+      <ul className="mt-9 grid items-stretch gap-6 sm:grid-cols-2 md:mt-14 md:gap-7">
         {trilhas.map((trilha, i) => (
           <Reveal
             as="li"
@@ -71,10 +71,10 @@ export function SectionTrilhas({
             delay={i * 100}
             className="block h-full"
           >
-            <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-white/10 bg-surface-dark/60 transition-colors duration-300 hover:border-brass/50">
+            <article className="group flex h-full flex-row overflow-hidden rounded-lg border border-white/10 bg-surface-dark/60 transition-colors duration-300 hover:border-brass/50 sm:flex-col">
               <Capa trilha={trilha} />
 
-              <div className="flex flex-1 flex-col p-6 sm:p-7">
+              <div className="flex flex-1 flex-col p-5 text-left sm:p-7">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
                   {trilha.rotulo}
                 </p>

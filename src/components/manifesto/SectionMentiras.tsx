@@ -14,7 +14,7 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
       <ul className="mt-12 grid gap-6 md:grid-cols-2 md:gap-7 md:items-stretch">
         {itens.map((item, i) => (
           <Reveal as="li" key={item.rotulo} delay={i * 120} className="h-full">
-            <article className="relative h-full overflow-hidden rounded-lg border border-white/10 bg-surface-dark/60 p-7 sm:p-8">
+            <article className="relative h-full overflow-hidden rounded-lg border border-white/10 bg-surface-dark/60 p-6 text-left sm:p-8">
               <p className="relative z-10 text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
                 {item.rotulo}
               </p>
@@ -37,7 +37,7 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
 
               <span
                 aria-hidden
-                className="pointer-events-none absolute -bottom-4 right-4 z-0 select-none font-display font-semibold leading-none text-brass/[0.07] text-[90px] md:text-[100px]"
+                className="pointer-events-none absolute -bottom-4 right-4 z-0 select-none font-display font-semibold leading-none text-brass/[0.07] text-[70px] sm:text-[90px] md:text-[100px]"
               >
                 {String(i + 1).padStart(2, "0")}
               </span>

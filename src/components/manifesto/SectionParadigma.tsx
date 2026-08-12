@@ -20,7 +20,7 @@ export function SectionParadigma({
       <div className="mt-14 grid gap-8 md:grid-cols-12 md:items-start md:gap-10">
         {/* Bloco antigo — única caixa da seção, inerte */}
         <Reveal className="md:col-span-5">
-          <div className="rounded-lg border border-white/8 bg-black/40 p-7 sm:p-8">
+          <div className="rounded-lg border border-white/8 bg-black/40 p-6 text-left sm:p-8">
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
               {antigo.rotulo}
             </p>
@@ -48,7 +48,7 @@ export function SectionParadigma({
         </div>
 
         {/* Bloco novo — aberto */}
-        <div className="md:col-span-5">
+        <div className="text-left md:col-span-5">
           <Reveal>
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
               {novo.rotulo}
