@@ -12,7 +12,7 @@ export const manifesto: ManifestoContent = {
     rotulo: "Comunidade",
   },
   ctaBar: {
-    label: "Quero entrar para o Manifesto",
+    label: "Entrar para o Manifesto",
   },
   hero: {
     badge: "O DESPERTAR DE UM NOVO MODO DE FUNCIONAMENTO DA CONSCIÊNCIA",
@@ -25,7 +25,7 @@ export const manifesto: ManifestoContent = {
     apoio:
       "O Manifesto Sistêmico é uma comunidade de desenvolvimento pessoal fundamentada na ciência, na filosofia e na visão sistêmica profunda. Acesse trilhas práticas para desarmar o medo de sofrer, romper a resistência à mudança e tomar a sua vida.",
 
-    cta: "Quero entrar para o Manifesto Sistêmico",
+    cta: "Entrar para o Manifesto",
 
     microtexto:
       "Acesso imediato a todas as trilhas no Hotmart Club. 2 anos de acesso.",
@@ -192,10 +192,10 @@ export const manifesto: ManifestoContent = {
       ],
       preco: {
         rotulo: "Condição de lançamento",
-        parcelado: "12x de R$ __VALOR_PARCELA__",
-        aVista: "ou R$ __VALOR_A_VISTA__ à vista",
+        parcelado: "12x de R$ 103,11",
+        aVista: "ou R$ 997,00 à vista",
       },
-      cta: "Quero assinar o Manifesto e tomar minha vida",
+      cta: "Quero tomar minha vida",
       garantia: {
         rotulo: "Garantia incondicional de 7 dias",
         texto:
