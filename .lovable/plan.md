@@ -6,7 +6,10 @@ Sem conteúdo novo, sem dependências novas, sem substituir placeholders.
 
 Varredura com Playwright nas três larguras, medindo `scrollWidth` vs `innerWidth`, tamanhos de fonte de corpo, altura de áreas de toque e quebras de título. Ajustes previstos (só se a medição confirmar o problema):
 
-- Seções longas (`setenios`, `paradigma`, `trilhas`): `className="py-14 sm:py-20 md:py-24"` pontual, sem mexer no padrão do `SectionShell`.
+- `SectionShell` passará a usar `tailwind-merge` para mesclar as classes base com `className`:
+  `className={twMerge("relative px-5 py-16 sm:px-8 sm:py-20 md:py-24", BG[fundo], className)}`.
+  Assim, `className="py-14"` sobrescreve o `py-16` de forma determinística e seções sem `className` mantêm o padding original.
+- Seções longas (`setenios`, `paradigma`, `trilhas`): `className="py-14"` pontual, sem mexer no padrão do `SectionShell`.
 - Trilhas: número da temporada de `text-[64px]` para `text-[52px]` no mobile, mantendo `sm:text-[72px]`.
 - Setênios e FAQ: confirmar que `sticky` só vale de `md:` para cima (já está) e que a linha vertical de encadeamento encerra no terceiro marcador nas três larguras.
 - Hero: confirmar badge e parágrafo de apoio ocultos no mobile e CTA visível a 360px com scroll mínimo.
