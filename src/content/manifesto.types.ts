@@ -14,19 +14,12 @@ export type CtaBar = {
   label: string;
 };
 
-export type HeroPilula = {
-  icon: "play" | "users" | "calendar" | "infinity";
-  label: string;
-};
-
 export type Hero = {
   badge: string;
   h1: string;
   subtitulo: string;
-  apoio: string;
   cta: string;
   microtexto: string;
-  pilulas: HeroPilula[];
 };
 
 
@@ -120,7 +113,6 @@ export type SectionTrilhas = {
   kind: "trilhas";
   fundo: Fundo;
   titulo: string;
-  subtitulo: string;
   trilhas: Trilha[];
 };
 

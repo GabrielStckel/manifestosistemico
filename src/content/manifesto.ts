@@ -12,30 +12,20 @@ export const manifesto: ManifestoContent = {
     rotulo: "Comunidade",
   },
   ctaBar: {
-    label: "Entrar para o Manifesto",
+    label: "Quero Entrar para o Manifesto Sistêmico",
   },
   hero: {
     badge: "O DESPERTAR DE UM NOVO MODO DE FUNCIONAMENTO DA CONSCIÊNCIA",
 
-    h1: "Por que você sabe exatamente o que precisa fazer,\nmas continua paralisado no\u00A0mesmo lugar?",
+    h1: "Por que você sabe exatamente o que precisa fazer, mas continua paralisado no mesmo lugar?",
 
     subtitulo:
-      "Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente.",
+      "Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente. O Manifesto Sistêmico é a primeira comunidade de desenvolvimento pessoal fundamentado na ciência, na filosofia e na visão sistêmica profunda. Acesse trilhas práticas para desarmar o medo de sofrer, romper a resistência à mudança e tomar a sua vida.",
 
-    apoio:
-      "O Manifesto Sistêmico é uma comunidade de desenvolvimento pessoal fundamentada na ciência, na filosofia e na visão sistêmica profunda. Acesse trilhas práticas para desarmar o medo de sofrer, romper a resistência à mudança e tomar a sua vida.",
-
-    cta: "Entrar para o Manifesto",
+    cta: "Quero Entrar para o Manifesto Sistêmico",
 
     microtexto:
-      "Acesso imediato a todas as trilhas no Hotmart Club. 2 anos de acesso.",
-
-    pilulas: [
-      { icon: "infinity", label: "2 anos de acesso" },
-      { icon: "play", label: "Trilhas no Hotmart Club" },
-      { icon: "calendar", label: "Vivências ao vivo bimestrais" },
-      { icon: "users", label: "Comunidade ativa de membros" },
-    ],
+      "Assinatura anual com acesso imediato a todas as trilhas no Hotmart Club.",
   },
 
 
