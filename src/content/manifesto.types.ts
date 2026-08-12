@@ -82,6 +82,13 @@ export type SectionComunidade = {
   texto: string;
 };
 
+export type SectionColetivo = {
+  kind: "coletivo";
+  fundo: Fundo;
+  titulo: string;
+  texto: string;
+};
+
 export type Trilha = {
   numero: string;
   rotulo: string;
@@ -106,6 +113,7 @@ export type ManifestoSection =
   | SectionSetenios
   | SectionParadigma
   | SectionComunidade
+  | SectionColetivo
   | SectionTrilhas;
 
 export type ManifestoContent = {
