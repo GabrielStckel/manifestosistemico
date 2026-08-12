@@ -7,7 +7,6 @@ export type Meta = {
 
 export type Topbar = {
   marca: string;
-  rotulo: string;
 };
 
 export type CtaBar = {
@@ -50,12 +49,10 @@ export type SectionParadigma = {
   fundo: Fundo;
   titulo: string;
   antigo: {
-    rotulo: string;
     nome: string;
     texto: string;
   };
   novo: {
-    rotulo: string;
     nome: string;
     transicao: string;
     itens: { titulo: string; texto: string }[];
@@ -80,7 +77,6 @@ export type SectionOferta = {
   kind: "oferta";
   fundo: Fundo;
   titulo: string;
-  rotuloInclui: string;
   inclui: string[];
   preco: {
     rotulo: string;
@@ -127,9 +123,6 @@ export type SectionRodape = {
   kind: "rodape";
   fundo: Fundo;
   marca: string;
-  descricao: string;
-  links: { label: string; href: string }[];
-  aviso: string;
   copyright: string;
 };
 
