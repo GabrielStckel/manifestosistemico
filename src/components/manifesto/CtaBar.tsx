@@ -42,23 +42,35 @@ export function CtaBar({ label }: { label: string }) {
   return (
     <div
       aria-hidden={!visivel}
-      className={`fixed inset-x-0 bottom-0 z-30 border-t transition-opacity duration-200 ${
-        visivel ? "opacity-100" : "pointer-events-none opacity-0"
+      className={`fixed inset-x-0 bottom-0 z-30 transition-all duration-300 ${
+        visivel ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-full opacity-0"
       } ${
         sobreClaro
-          ? "border-black/10 bg-section-light-bg/95 text-section-light-fg"
-          : "border-white/10 bg-bg-black text-section-dark-fg"
+          ? "border-t border-black/10 bg-section-light-bg/80 text-section-light-fg backdrop-blur-xl"
+          : "border-t border-white/10 bg-bg-black/70 text-section-dark-fg backdrop-blur-xl"
       }`}
+      style={{
+        boxShadow: "0 -12px 40px rgba(0,0,0,0.35), inset 0 1px 0 rgba(197,162,103,0.12)",
+      }}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-center px-4 py-3 sm:px-8">
         <a
           href="#oferta"
           tabIndex={visivel ? undefined : -1}
-          className="inline-flex min-h-[48px] w-full items-center justify-center rounded-cta bg-red-primary px-6 text-center text-[14px] font-bold uppercase leading-snug tracking-wide text-on-red md:text-[15.5px] transition-colors hover:bg-red-primary-hover sm:w-auto sm:min-w-[340px]"
+          className="group relative inline-flex min-h-[52px] w-full items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/10 bg-gradient-to-b from-red-primary to-red-primary-hover px-6 text-center text-[13.5px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_0_28px_rgba(211,58,52,0.28)] transition-all hover:shadow-[0_0_40px_rgba(211,58,52,0.42)] hover:brightness-110 active:scale-[0.98] sm:w-auto sm:min-w-[320px] md:min-h-[56px] md:text-[15px]"
         >
-          {label}
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full transition-transform duration-700 ease-in-out group-hover:translate-x-full"
+          />
+          <span className="relative z-10">{label}</span>
+          <ArrowRight
+            aria-hidden="true"
+            className="relative z-10 h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
+          />
         </a>
       </div>
     </div>
   );
 }
+
