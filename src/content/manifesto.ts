@@ -135,5 +135,13 @@ export const manifesto: ManifestoContent = {
         ],
       },
     },
+    {
+      kind: "comunidade",
+      fundo: "light",
+      titulo:
+        "O Manifesto Sist\u00EAmico:\nUm movimento integrado de evolu\u00E7\u00E3o cont\u00EDnua",
+      texto:
+        "O Manifesto Sist\u00EAmico \u00E9 uma comunidade que funciona como um streaming de desenvolvimento pessoal hospedado no Hotmart Club. Em vez de comprar m\u00FAltiplos cursos caros e isolados para cada crise da sua vida, voc\u00EA assina um estilo de vida de evolu\u00E7\u00E3o cont\u00EDnua. Voc\u00EA navega por trilhas integradas de conhecimento pr\u00E1tico, desenhadas para atualizar sua consci\u00EAncia no seu pr\u00F3prio ritmo.",
+    },
   ],
 };

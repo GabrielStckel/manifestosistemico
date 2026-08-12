@@ -75,10 +75,18 @@ export type SectionParadigma = {
   };
 };
 
+export type SectionComunidade = {
+  kind: "comunidade";
+  fundo: Fundo;
+  titulo: string;
+  texto: string;
+};
+
 export type ManifestoSection =
   | SectionMentiras
   | SectionSetenios
-  | SectionParadigma;
+  | SectionParadigma
+  | SectionComunidade;
 
 export type ManifestoContent = {
   meta: Meta;
