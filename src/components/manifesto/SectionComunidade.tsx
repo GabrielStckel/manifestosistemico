@@ -34,7 +34,7 @@ export function SectionComunidade({
         </div>
 
         <Reveal>
-          <h2 className="mt-8 whitespace-pre-line text-balance font-display text-[clamp(1.65rem,6.6vw,2.25rem)] font-semibold leading-[1.14] tracking-[-0.015em] text-section-red-fg md:mt-10 md:text-[clamp(2rem,3.4vw,2.8rem)] md:leading-[1.08]">
+          <h2 className="mt-8 whitespace-pre-line text-balance font-display text-[clamp(1.45rem,5.8vw,2rem)] font-semibold leading-[1.18] tracking-[-0.015em] text-section-red-fg md:mt-10 md:text-[clamp(1.75rem,3.1vw,2.5rem)] md:leading-[1.12]">
             {titulo}
           </h2>
         </Reveal>
