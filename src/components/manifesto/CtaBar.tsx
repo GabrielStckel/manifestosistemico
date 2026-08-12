@@ -13,7 +13,7 @@ export function CtaBar({ label }: { label: string }) {
       const deveMostrar = window.scrollY > 400 && !ofertaVisivel;
       setVisivel(deveMostrar);
 
-      // elementsFromPoint (plural) para ignorar a pr\u00f3pria barra fixa,
+      // elementsFromPoint (plural) para ignorar a própria barra fixa,
       // que cobre o ponto de amostragem.
       const pilha = document.elementsFromPoint(
         window.innerWidth / 2,
