@@ -84,12 +84,6 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
           {subtitulo}
         </p>
 
-        {apoio ? (
-          <p className="mt-4 max-w-[40ch] text-[13.5px] leading-[1.6] text-section-dark-fg/60 md:max-w-[62ch] md:whitespace-pre-line md:text-[16px] md:leading-[1.7]">
-            {apoio}
-          </p>
-        ) : null}
-
         <a
           href="#oferta"
           className="group relative mt-9 flex min-h-[60px] w-full max-w-[440px] items-center justify-center gap-2 overflow-hidden rounded-cta bg-red-primary px-6 text-center text-[14.5px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_22px_60px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_28px_75px_-16px_var(--red-accent)] active:scale-[0.99] md:mt-11 md:text-[17px]"
@@ -108,6 +102,12 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
         <p className="mt-4 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:max-w-none md:text-[14px]">
           {microtexto}
         </p>
+
+        {apoio ? (
+          <p className="mt-6 max-w-[40ch] text-[13.5px] leading-[1.6] text-section-dark-fg/60 md:mt-7 md:max-w-[62ch] md:whitespace-pre-line md:text-[16px] md:leading-[1.7]">
+            {apoio}
+          </p>
+        ) : null}
       </div>
     </section>
   );
