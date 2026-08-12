@@ -18,7 +18,7 @@ export function Hero({
   pilulas,
 }: HeroType) {
   return (
-    <section className="relative flex min-h-[92svh] items-center overflow-hidden bg-section-dark-bg px-5 pb-16 pt-24 text-section-dark-fg sm:px-8 md:min-h-[88vh] md:pb-24 md:pt-28">
+    <section className="relative flex min-h-[92svh] items-center overflow-hidden bg-section-dark-bg px-5 pb-14 pt-20 text-section-dark-fg sm:px-8 md:min-h-[88vh] md:pb-24 md:pt-28">
       {/* Camadas de fundo — todas decorativas */}
       <div
         aria-hidden="true"
