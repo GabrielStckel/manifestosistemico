@@ -8,7 +8,7 @@ Seção de declaração em fundo vinho, a única quebra cromática da página, l
 2. **Conteúdo** (`src/content/manifesto.ts`): seção adicionada ao final de `sections`, com `fundo: "red"` e a copy exata do documento (título e parágrafo, caractere por caractere).
 3. **Componente** (`src/components/manifesto/SectionColetivo.tsx`):
    - `SectionShell fundo={fundo} className="md:py-32"`.
-   - Camada decorativa única: `div aria-hidden` absoluto em `inset-0`, `pointer-events-none`, com `radial-gradient(70% 60% at 50% 40%, rgba(0,0,0,0.28) 0%, transparent 70%)` para o vinho não ficar chapado.
+   - Camada decorativa única: `div aria-hidden` absoluto em `inset-0`, `pointer-events-none`, com `background: radial-gradient(90% 70% at 50% 40%, transparent 45%, rgba(0,0,0,0.35) 100%);` para o vinho não ficar chapado e o brilho se concentrar no centro.
    - Container `relative mx-auto max-w-3xl text-center`.
    - Título em `Reveal`, display serif, `text-section-red-fg`, clamp responsivo.
    - Filete divisor `mx-auto mt-8 h-px w-16 bg-on-red/35`.
