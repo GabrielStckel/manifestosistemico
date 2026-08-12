@@ -143,5 +143,41 @@ export const manifesto: ManifestoContent = {
       texto:
         "O Manifesto Sist\u00EAmico \u00E9 uma comunidade que funciona como um streaming de desenvolvimento pessoal hospedado no Hotmart Club. Em vez de comprar m\u00FAltiplos cursos caros e isolados para cada crise da sua vida, voc\u00EA assina um estilo de vida de evolu\u00E7\u00E3o cont\u00EDnua. Voc\u00EA navega por trilhas integradas de conhecimento pr\u00E1tico, desenhadas para atualizar sua consci\u00EAncia no seu pr\u00F3prio ritmo.",
     },
+    {
+      kind: "trilhas",
+      fundo: "dark",
+      titulo: "As temporadas da sua transforma\u00E7\u00E3o.",
+      subtitulo: "A jornada come\u00E7a pelo essencial:",
+      trilhas: [
+        {
+          numero: "01",
+          rotulo: "Temporada 01",
+          titulo: "A Introdu\u00E7\u00E3o: A arquitetura da consci\u00EAncia sist\u00EAmica",
+          texto:
+            "O in\u00EDcio do movimento de consci\u00EAncia que leva \u00E0 leveza e \u00E0 compreens\u00E3o da vida.",
+        },
+        {
+          numero: "02",
+          rotulo: "Temporada 02",
+          titulo: "As tr\u00EAs motiva\u00E7\u00F5es humanas",
+          texto:
+            "O resgate da for\u00E7a. Investigue as motiva\u00E7\u00F5es inconscientes gravadas dos 0 aos 21 anos. Desarme o medo de sofrer e o medo de mudar, pacificando sua rela\u00E7\u00E3o com sua origem.",
+        },
+        {
+          numero: "03",
+          rotulo: "Temporada 03",
+          titulo: "O Despertar do Paradigma (Ci\u00EAncia e Filosofia)",
+          texto:
+            "A base epistemol\u00F3gica. Compreenda as implica\u00E7\u00F5es filos\u00F3ficas da f\u00EDsica moderna (teoria da relatividade, mec\u00E2nica qu\u00E2ntica) e como sua consci\u00EAncia colapsa a realidade di\u00E1ria.",
+        },
+        {
+          numero: "04",
+          rotulo: "Temporada 04",
+          titulo: "A Individua\u00E7\u00E3o",
+          texto:
+            "O caminho para sair da infantiliza\u00E7\u00E3o. Abandone a postura de \"pequeno\" e a terceiriza\u00E7\u00E3o de responsabilidades. Desenvolva a maturidade emocional para assumir o protagonismo e tomar sua vida com amor por voc\u00EA.",
+        },
+      ],
+    },
   ],
 };
