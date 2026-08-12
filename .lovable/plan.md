@@ -1,51 +1,52 @@
-# Desbloqueio de personalização + revisão de copy
+# Sincronizar a copy da página com o documento
 
-## Objetivo
+A página passa a usar exatamente o texto do arquivo enviado — nada a mais, nada a menos. Todas as alterações ficam em `src/content/manifesto.ts` e nos tipos, sem redesenhar layout.
 
-Remover as restrições de personalização acumuladas nos prompts anteriores e, com liberdade total de design, revisar todos os títulos e textos da landing page para deixá-los mais impactantes, persuasivos e alinhados com o posicionamento de alto ticket do Manifesto Sistêmico.
+## Diferenças encontradas entre a página atual e o documento
 
-## O que será desbloqueado
+**Hero**
+- Tag de contexto: igual, mantida.
+- Headline: igual, mantida.
+- Subheadline: o documento traz um único parágrafo. A página hoje quebra esse texto em "subtítulo" + "apoio" e alterou palavras ("é uma comunidade" em vez de "é a primeira comunidade"). Passa a exibir o texto do documento, integral e sem edição.
+- CTA: muda de "Entrar para o Manifesto" para **"Quero Entrar para o Manifesto Sistêmico"**.
+- Texto de apoio abaixo do botão: muda para **"Assinatura anual com acesso imediato a todas as trilhas no Hotmart Club."**
+- As 4 pílulas ("2 anos de acesso", "Trilhas no Hotmart Club", "Vivências ao vivo bimestrais", "Comunidade ativa de membros") **não existem no documento** e serão removidas.
 
-1. **Restrições de animação** — nada impede mais o uso de animações, transições, micro-interações ou bibliotecas de motion quando estrategicamente úteis.
-2. **Restrições de cor/efeito** — qualquer paleta, gradiente, glow, textura ou profundidade pode ser aplicada se melhorar a conversão e a legibilidade.
-3. **Restrições de componente** — a arquitetura atual pode ser alterada, reorganizada ou expandida conforme necessário.
-4. **Restrições de tipografia** — as escolhas de fonte, peso, escala e ritmo tipográfico podem ser revistas.
+**Seção 2 — As duas mentiras**
+- Título e os dois blocos já batem com o documento. Os rótulos passam a ser "Mentira #1" e "Mentira #2" (hoje estão como "Mentira 01" / "Mentira 02").
 
-## O que será revisado
+**Seção 3 — Setênios**: já idêntica ao documento. Sem mudança.
 
-Revisão completa de copywriting em todos os pontos de comunicação da landing page:
+**Seção 4 — Paradigma**: já idêntica. Sem mudança.
 
-- **Hero**: badge, h1, subtítulo, texto de apoio, microtexto abaixo do CTA e rótulos das 4 pilulas.
-- **Seção Mentiras**: título principal, rótulos das mentiras, textos das verdades.
-- **Seção Setênios**: título, abertura e títulos/textos dos três elos da cadeia causal.
-- **Seção Paradigma**: título, bloco do modo antigo (Cartesiano) e bloco do modo novo (Sistêmico) com itens.
-- **Seção Comunidade**: título e texto de posicionamento.
-- **Seção Trilhas**: título, subtítulo e título/texto de cada temporada.
-- **Seção Coletivo**: título e texto.
-- **Seção Oferta**: título, lista de inclusões, rótulo de preço, parcelado, à vista, CTA e garantia.
-- **FAQ**: perguntas e respostas.
-- **Rodapé**: descrição, links e aviso legal.
-- **Meta tags**: title, description, ogTitle e ogDescription.
+**Seção 5 — Comunidade**: já idêntica. Sem mudança.
 
-## Diretrizes da revisão
+**Seção 6 — Trilhas**
+- Hoje o título está dividido em título + subtítulo. No documento é uma linha só: "As temporadas da sua transformação. A jornada começa pelo essencial:".
+- Os rótulos mudam de "Temporada 01..04" para **"Trilha 01..04"**.
+- Trilha 02: o documento coloca "O resgate da força." dentro do título ("As três motivações humanas: O resgate da força."). O texto passa a começar em "Investigue as motivações...".
 
-- Tom maduro, filosófico-científico, sem jargão barato de marketing.
-- Foco em dor, mecanismo e transformação — não em promessas genéricas.
-- H1 e títulos de seção com gancho claro, empatia com a paralisia e convite para o novo paradigma.
-- Textos de apoio mais densos, que soem como raciocínio, não como slogan.
-- Manter o mesmo conteúdo estrutural (as 4 trilhas, as 2 mentiras, os 3 setênios, etc.) — só reescrever as palavras.
-- Preservar acessibilidade e SEO: headings hierárquicos, alt text, metadados.
+**Seção 7 — Coletivo**: já idêntica. Sem mudança.
 
-## Entregáveis
+**Seção 8 — Oferta**
+- Título e os 4 itens de inclusão: já idênticos.
+- Rótulo do preço muda para **"Preço Especial de Lançamento:"**.
+- O documento traz placeholders `[VALOR_CHEIO]`, `[VALOR_PARCELA]`, `[VALOR_A_VISTA]`. Como placeholders não podem aparecer na página publicada, mantenho os valores reais já confirmados (12x de R$ 103,11 / R$ 997,00 à vista) e passo a exibir a frase no formato do documento: "por apenas 12x de R$ 103,11 ou R$ 997,00 à vista no plano anual". O "De R$ [VALOR_CHEIO]" fica de fora até você informar o valor cheio.
+- CTA de compra muda para **"Quero Assinar o Manifesto e Tomar Minha Vida"**.
+- Garantia: rótulo passa a "Garantia Incondicional de 7 dias" e o texto já bate.
 
-1. `src/content/manifesto.ts` atualizado com toda a copy revisada.
-2. `src/routes/index.tsx` (ou `src/components/manifesto/ManifestoPage.tsx`) com meta tags preenchidas.
-3. Ajustes pontuais de estilo em `src/styles.css` ou componentes se a nova copy exigir variação de hierarquia visual.
-4. Verificação visual da página completa e leitura de todos os textos para garantir coerência de tom.
+**Seção 9 — FAQ**: as 4 perguntas e respostas já batem. Sem mudança.
 
-## Não está no escopo
+**Barra de CTA fixa**: usa o CTA principal do documento ("Quero Entrar para o Manifesto Sistêmico").
 
-- Mudar a estrutura de seções (adicionar ou remover seções).
-- Alterar preços, prazos ou garantias — apenas como são apresentados.
-- Trocar a arquitetura de rotas ou adicionar novas páginas.
-- Implementar checkout, pagamento ou backend.
+**Rodapé**: não existe no documento. Mantido como está (marca, links legais e aviso), pois é exigência de página publicada.
+
+**Meta tags**: hoje estão como `[DEFINIR]`, o que prejudica SEO e compartilhamento. Serão preenchidas com a headline e a subheadline do documento, sem inventar texto novo.
+
+## Detalhes técnicos
+
+- `src/content/manifesto.types.ts`: remover `apoio` e `pilulas` do tipo `Hero`; remover `subtitulo` de `SectionTrilhas`.
+- `src/content/manifesto.ts`: aplicar toda a copy acima.
+- `src/components/manifesto/Hero.tsx`: remover o bloco de pílulas e o parágrafo de apoio; a subheadline única ganha o espaço.
+- `src/components/manifesto/SectionTrilhas.tsx`: remover a renderização do subtítulo.
+- `src/routes/index.tsx`: metadados a partir do `meta` atualizado.
