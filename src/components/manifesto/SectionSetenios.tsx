@@ -20,7 +20,7 @@ export function SectionSetenios({
           </Reveal>
 
           <Reveal delay={120}>
-            <p className="mx-auto mt-6 max-w-[58ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base">
+            <p className="mx-auto mt-6 max-w-[58ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base md:text-[18px] md:leading-[1.75]">
               {abertura}
             </p>
           </Reveal>
@@ -43,7 +43,7 @@ export function SectionSetenios({
 
               <span
                 aria-hidden
-                className="absolute left-0 top-1 flex h-7 w-7 items-center justify-center rounded-full border border-brass/50 bg-section-light-bg text-[11px] font-semibold text-brass-ink md:h-8 md:w-8"
+                className="absolute left-0 top-1 flex h-7 w-7 items-center justify-center rounded-full border border-brass/50 bg-section-light-bg text-[11px] font-semibold text-brass-ink md:text-[12px] md:h-8 md:w-8"
               >
                 {String(i + 1).padStart(2, "0")}
                 <span
@@ -53,10 +53,10 @@ export function SectionSetenios({
               </span>
 
 
-              <h3 className="font-display text-[17px] font-semibold leading-snug text-section-light-fg sm:text-[19px]">
+              <h3 className="font-display text-[17px] font-semibold leading-snug text-section-light-fg sm:text-[19px] md:text-[22px]">
                 {elo.titulo}
               </h3>
-              <p className="mt-2.5 max-w-[62ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base">
+              <p className="mt-2.5 max-w-[62ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base md:text-[18px] md:leading-[1.75]">
                 {elo.texto}
               </p>
             </Reveal>

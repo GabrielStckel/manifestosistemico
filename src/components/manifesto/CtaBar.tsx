@@ -54,7 +54,7 @@ export function CtaBar({ label }: { label: string }) {
         <a
           href="#oferta"
           tabIndex={visivel ? undefined : -1}
-          className="inline-flex min-h-[48px] w-full items-center justify-center rounded-cta bg-red-primary px-6 text-center text-[14px] font-bold uppercase leading-snug tracking-wide text-on-red transition-colors hover:bg-red-primary-hover sm:w-auto sm:min-w-[340px]"
+          className="inline-flex min-h-[48px] w-full items-center justify-center rounded-cta bg-red-primary px-6 text-center text-[14px] font-bold uppercase leading-snug tracking-wide text-on-red md:text-[15.5px] transition-colors hover:bg-red-primary-hover sm:w-auto sm:min-w-[340px]"
         >
           {label}
         </a>

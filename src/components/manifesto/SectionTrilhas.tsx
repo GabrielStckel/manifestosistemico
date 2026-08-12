@@ -38,7 +38,7 @@ function Capa({ trilha }: { trilha: Trilha }) {
       )}
 
       {trilha.status ? (
-        <span className="absolute right-3 top-3 rounded-pill border border-brass/40 bg-black/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-brass">
+        <span className="absolute right-3 top-3 rounded-pill border border-brass/40 bg-black/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-brass md:text-[12px]">
           {trilha.status}
         </span>
       ) : null}
@@ -67,13 +67,13 @@ export function SectionTrilhas({ fundo, titulo, trilhas }: SectionTrilhasType) {
               <Capa trilha={trilha} />
 
               <div className="flex flex-1 flex-col p-5 text-left sm:p-7">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass md:text-[12px]">
                   {trilha.rotulo}
                 </p>
-                <h3 className="mt-3 font-display text-[17px] font-semibold leading-snug text-section-dark-fg sm:text-[18px]">
+                <h3 className="mt-3 font-display text-[17px] font-semibold leading-snug text-section-dark-fg sm:text-[18px] md:text-[21px]">
                   {trilha.titulo}
                 </h3>
-                <p className="mt-3 text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-justify sm:hyphens-auto sm:text-[15px]">
+                <p className="mt-3 text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-justify sm:hyphens-auto sm:text-[15px] md:text-[17.5px] md:leading-[1.7]">
                   {trilha.texto}
                 </p>
               </div>

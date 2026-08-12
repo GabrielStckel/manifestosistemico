@@ -39,7 +39,7 @@ export function SectionOferta({
               {inclui.map((item) => (
                 <li
                   key={item}
-                  className="flex gap-3.5 text-[15px] leading-relaxed text-section-dark-fg/85 sm:text-base"
+                  className="flex gap-3.5 text-[15px] leading-relaxed text-section-dark-fg/85 sm:text-base md:text-[17.5px]"
                 >
                   <Check aria-hidden className="mt-1 h-4 w-4 shrink-0 text-brass" />
                   <span className="text-justify hyphens-auto">{item}</span>
@@ -51,12 +51,12 @@ export function SectionOferta({
           <div aria-hidden className="h-px w-full bg-white/10" />
 
           <div className="p-6 text-center sm:p-9">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass md:text-[12px]">
               {preco.rotulo}
             </p>
 
             {preco.de ? (
-              <p className="mt-4 text-[15px] text-muted-foreground line-through">
+              <p className="mt-4 text-[15px] text-muted-foreground line-through md:text-[17px]">
                 {preco.de}
               </p>
             ) : null}
@@ -65,11 +65,11 @@ export function SectionOferta({
               {preco.parcelado}
             </p>
 
-            <p className="mt-3 text-[15px] text-section-dark-fg/70">{preco.aVista}</p>
+            <p className="mt-3 text-[15px] text-section-dark-fg/70 md:text-[17px]">{preco.aVista}</p>
 
             <a
               href={CHECKOUT_URL}
-              className="mt-8 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-cta bg-red-primary px-4 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-normal text-on-red shadow-lg shadow-red-deep/40 transition-colors hover:bg-red-primary-hover sm:px-6 sm:text-[15px] sm:tracking-wide"
+              className="mt-8 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-cta bg-red-primary px-4 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-normal text-on-red shadow-lg shadow-red-deep/40 transition-colors hover:bg-red-primary-hover sm:px-6 sm:text-[15px] sm:tracking-wide md:text-[16px]"
             >
               {cta}
               <ArrowRight aria-hidden className="h-4 w-4 shrink-0" />
@@ -82,10 +82,10 @@ export function SectionOferta({
         <div className="mx-auto mt-8 flex max-w-2xl gap-4 rounded-lg border border-white/10 bg-black/30 p-6 text-left">
           <ShieldCheck aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brass" />
           <div>
-            <p className="font-display text-[16px] font-semibold text-section-dark-fg">
+            <p className="font-display text-[16px] font-semibold text-section-dark-fg md:text-[19px]">
               {garantia.rotulo}
             </p>
-            <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75">
+            <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 md:text-[17px] md:leading-[1.75]">
               {garantia.texto}
             </p>
           </div>

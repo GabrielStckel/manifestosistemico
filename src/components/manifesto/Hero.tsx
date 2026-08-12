@@ -55,7 +55,7 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
         </h1>
 
         <p
-          className="mt-5 max-w-[46ch] text-[15px] leading-[1.6] text-section-dark-fg/85 md:mt-7 md:max-w-[62ch] md:text-[16.5px] md:leading-[1.7]"
+          className="mt-5 max-w-[46ch] text-[15px] leading-[1.6] text-section-dark-fg/85 md:mt-7 md:max-w-[62ch] md:text-[18.5px] md:leading-[1.75]"
           style={{ textShadow: "var(--text-shadow-soft)" }}
         >
           {subtitulo}
@@ -63,7 +63,7 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
 
         <a
           href="#oferta"
-          className="group mt-8 flex min-h-[58px] w-full max-w-[420px] items-center justify-center gap-2 rounded-cta bg-red-primary px-6 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_18px_50px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_22px_60px_-16px_var(--red-accent)] active:scale-[0.99] md:mt-11 md:text-[15px]"
+          className="group mt-8 flex min-h-[58px] w-full max-w-[420px] items-center justify-center gap-2 rounded-cta bg-red-primary px-6 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_18px_50px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_22px_60px_-16px_var(--red-accent)] active:scale-[0.99] md:mt-11 md:text-[16px]"
         >
           {cta}
           <ArrowRight
@@ -72,7 +72,7 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           />
         </a>
 
-        <p className="mt-3.5 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:mt-4 md:max-w-none md:text-[13px]">
+        <p className="mt-3.5 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:mt-4 md:max-w-none md:text-[14px]">
           {microtexto}
         </p>
 
