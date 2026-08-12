@@ -79,11 +79,10 @@ export function SectionTrilhas({ fundo, titulo, trilhas }: SectionTrilhasType) {
                 {/* Brilho de canto no hover */}
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-[0.13]"
                   style={{
                     background:
                       "radial-gradient(70% 60% at 0% 0%, var(--brass) 0%, transparent 65%)",
-                    opacity: undefined,
                   }}
                 />
                 <span
