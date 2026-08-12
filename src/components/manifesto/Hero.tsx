@@ -76,23 +76,6 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           {microtexto}
         </p>
 
-        <ul className="mt-9 grid w-full max-w-[340px] grid-cols-2 gap-px overflow-hidden rounded-md bg-white/8 sm:mt-10 sm:flex sm:max-w-none sm:gap-x-8 sm:bg-transparent sm:rounded-none md:mt-12 md:gap-x-8 md:border-t md:border-white/10 md:pt-7 md:text-[12.5px]">
-          {pilulas.map((p) => {
-            const Icon = ICONS[p.icon];
-            return (
-              <li
-                key={p.icon + p.label}
-                className="flex min-w-0 items-start gap-2 bg-section-dark-bg/70 px-3 py-3 text-left text-[11.5px] font-medium leading-[1.35] text-section-dark-fg/80 sm:items-center sm:bg-transparent sm:p-0 sm:text-[13px]"
-              >
-                <Icon
-                  aria-hidden="true"
-                  className="mt-[1px] h-3.5 w-3.5 shrink-0 text-brass sm:mt-0"
-                />
-                {p.label}
-              </li>
-            );
-          })}
-        </ul>
       </div>
     </section>
   );
