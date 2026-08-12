@@ -17,9 +17,14 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
 
       <div className="relative z-10">
       <Reveal className="mx-auto max-w-3xl text-center">
-        <h2 className="text-balance font-display font-semibold leading-[1.12] text-[clamp(1.6rem,6.8vw,2.35rem)] md:text-[clamp(1.75rem,3.4vw,2.6rem)]">
+        <h2 className="text-pretty font-display font-semibold leading-[1.2] text-[clamp(1.35rem,5.6vw,2rem)] max-w-[18ch] sm:text-[clamp(1.5rem,6.2vw,2.2rem)] sm:max-w-[22ch] md:max-w-3xl md:text-[clamp(1.75rem,3.4vw,2.6rem)] md:leading-[1.12]">
           {titulo}
         </h2>
+        <div aria-hidden className="mt-7 flex items-center justify-center gap-3">
+          <span className="h-px w-10 bg-gradient-to-r from-transparent to-brass/60 md:w-16" />
+          <span className="h-1 w-1 rotate-45 bg-brass/80" />
+          <span className="h-px w-10 bg-gradient-to-l from-transparent to-brass/60 md:w-16" />
+        </div>
       </Reveal>
 
       <ul className="mt-12 grid gap-6 md:grid-cols-2 md:gap-7 md:items-stretch">
