@@ -62,7 +62,7 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
         </p>
 
         <h1
-          className="mt-7 text-balance font-display text-[clamp(1.95rem,7.6vw,2.6rem)] font-semibold leading-[1.18] tracking-[-0.015em] md:mt-9 md:max-w-[20ch] md:text-[clamp(2.5rem,4.6vw,3.5rem)] md:leading-[1.14] md:tracking-[-0.02em]"
+          className="mt-7 text-balance font-display text-[clamp(1.65rem,6.2vw,2.2rem)] font-semibold leading-[1.2] tracking-[-0.015em] md:mt-9 md:max-w-[24ch] md:text-[clamp(2.05rem,3.9vw,2.85rem)] md:leading-[1.16] md:tracking-[-0.02em]"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
           <span className="block">{h1.split(",")[0]},</span>
