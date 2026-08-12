@@ -47,7 +47,7 @@ export function SectionColetivo({
           </Reveal>
 
           <Reveal delay={80}>
-            <h2 className="mt-5 text-balance text-center font-display font-semibold leading-[1.08] tracking-[-0.01em] text-section-red-fg text-[clamp(1.85rem,7.6vw,2.6rem)] md:mt-6 md:text-[clamp(2.2rem,4vw,3.1rem)]">
+            <h2 className="mt-5 text-balance text-center font-display font-semibold leading-[1.08] tracking-[-0.01em] text-section-red-fg text-[clamp(1.85rem,7.6vw,2.6rem)] md:mt-6 md:text-[clamp(1.85rem,3.3vw,2.6rem)]">
               {titulo}
             </h2>
           </Reveal>
@@ -60,7 +60,7 @@ export function SectionColetivo({
           </div>
 
           <Reveal delay={160}>
-            <p className="mx-auto mt-8 max-w-[40ch] text-justify hyphens-auto text-[16.5px] leading-[1.8] text-section-red-fg/90 first-letter:float-left first-letter:mr-3 first-letter:font-display first-letter:text-[3.1rem] first-letter:font-semibold first-letter:leading-[0.82] first-letter:text-on-red sm:max-w-[60ch] sm:text-[18.5px] md:mt-10 md:text-[21px] md:leading-[1.85] md:first-letter:text-[4rem] md:first-letter:mr-4">
+            <p className="mx-auto mt-8 max-w-[40ch] text-justify hyphens-auto text-[16.5px] leading-[1.8] text-section-red-fg/90 first-letter:float-left first-letter:mr-3 first-letter:font-display first-letter:text-[3.1rem] first-letter:font-semibold first-letter:leading-[0.82] first-letter:text-on-red sm:max-w-[60ch] sm:text-[18.5px] md:mt-10 md:text-[18px] md:leading-[1.85] md:first-letter:text-[3.4rem] md:first-letter:mr-4">
               {texto}
             </p>
           </Reveal>

@@ -34,7 +34,7 @@ export function SectionComunidade({
         </div>
 
         <Reveal>
-          <h2 className="mt-8 whitespace-pre-line text-balance font-display text-[clamp(1.45rem,5.8vw,2rem)] font-semibold leading-[1.18] tracking-[-0.015em] text-section-red-fg md:mt-10 md:text-[clamp(1.75rem,3.1vw,2.5rem)] md:leading-[1.12]">
+          <h2 className="mt-8 whitespace-pre-line text-balance font-display text-[clamp(1.45rem,5.8vw,2rem)] font-semibold leading-[1.18] tracking-[-0.015em] text-section-red-fg md:mt-10 md:text-[clamp(1.55rem,2.7vw,2.05rem)] md:leading-[1.12]">
             {titulo}
           </h2>
         </Reveal>
@@ -51,8 +51,8 @@ export function SectionComunidade({
               className="pointer-events-none absolute -bottom-3 -right-3 h-6 w-6 border-b border-r border-on-red/45 md:-bottom-6 md:-right-6 md:h-10 md:w-10"
             />
 
-            <p className="text-left text-[16.5px] leading-[1.8] text-section-red-fg/85 sm:text-[18px] md:text-justify md:hyphens-auto md:text-[20px] md:leading-[1.85]">
-              <span className="float-left mr-3 mt-1 font-display text-[3.1rem] font-semibold leading-[0.78] text-on-red md:mr-4 md:text-[4.2rem]">
+            <p className="text-left text-[16.5px] leading-[1.8] text-section-red-fg/85 sm:text-[18px] md:text-justify md:hyphens-auto md:text-[18px] md:leading-[1.85]">
+              <span className="float-left mr-3 mt-1 font-display text-[3.1rem] font-semibold leading-[0.78] text-on-red md:mr-4 md:text-[3.6rem]">
                 {primeiraLetra}
               </span>
               {resto.join("")}
