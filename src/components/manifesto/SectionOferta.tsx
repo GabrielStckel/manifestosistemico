@@ -23,7 +23,7 @@ export function SectionOferta({
 
       <Reveal delay={120}>
         <div className="mx-auto mt-12 max-w-2xl overflow-hidden rounded-lg border border-brass/25 bg-surface-dark/70">
-          <div className="p-7 sm:p-9">
+          <div className="p-6 text-left sm:p-9">
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
               {rotuloInclui}
             </p>
@@ -43,7 +43,7 @@ export function SectionOferta({
 
           <div aria-hidden className="h-px w-full bg-white/10" />
 
-          <div className="p-7 text-center sm:p-9">
+          <div className="p-6 text-center sm:p-9">
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
               {preco.rotulo}
             </p>
@@ -72,7 +72,7 @@ export function SectionOferta({
       </Reveal>
 
       <Reveal delay={200}>
-        <div className="mx-auto mt-8 flex max-w-2xl gap-4 rounded-lg border border-white/10 bg-black/30 p-6">
+        <div className="mx-auto mt-8 flex max-w-2xl gap-4 rounded-lg border border-white/10 bg-black/30 p-6 text-left">
           <ShieldCheck aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brass" />
           <div>
             <p className="font-display text-[16px] font-semibold text-section-dark-fg">

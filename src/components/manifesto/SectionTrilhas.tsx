@@ -7,7 +7,7 @@ import type {
 
 function Capa({ trilha }: { trilha: Trilha }) {
   return (
-    <div className="relative flex aspect-[16/9] items-center justify-center overflow-hidden border-b border-white/8 bg-black/50">
+    <div className="relative flex w-20 shrink-0 items-center justify-center self-stretch overflow-hidden border-r border-white/8 bg-black/50 sm:aspect-[16/9] sm:w-auto sm:self-auto sm:border-b sm:border-r-0">
       {trilha.poster ? (
         <img
           src={trilha.poster.src}
