@@ -27,6 +27,8 @@ export function ManifestoPage({ content }: { content: ManifestoContent }) {
         switch (s.kind) {
           case "mentiras":
             return <SectionMentiras key={key} {...s} />;
+          case "setenios":
+            return <SectionSetenios key={key} {...s} />;
         }
       })}
     </main>
