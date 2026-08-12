@@ -192,10 +192,10 @@ export function SectionOferta({
           <div className="mx-auto mt-8 flex max-w-3xl gap-4 rounded-lg border border-brass/20 bg-black/30 p-6 text-left md:p-7">
             <ShieldCheck aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brass" />
             <div>
-              <p className="font-display text-[16px] font-semibold text-section-dark-fg md:text-[19px]">
+              <p className="font-display text-[16px] font-semibold text-section-dark-fg md:text-[17px]">
                 {garantia.rotulo}
               </p>
-              <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 md:text-[17px] md:leading-[1.75]">
+              <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 md:text-[16px] md:leading-[1.75]">
                 {garantia.texto}
               </p>
             </div>

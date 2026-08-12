@@ -13,7 +13,7 @@ export function SectionFaq({ fundo, titulo, itens }: SectionFaqType) {
       <div>
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <h2 className="font-display font-semibold leading-[1.12] text-section-light-fg text-[clamp(1.6rem,6.8vw,2.2rem)] md:text-[clamp(1.7rem,3vw,2.3rem)]">
+            <h2 className="font-display font-semibold leading-[1.12] text-section-light-fg text-[clamp(1.6rem,6.8vw,2.2rem)] md:text-[clamp(1.45rem,2.5vw,1.95rem)]">
               {titulo}
             </h2>
           </Reveal>
@@ -37,7 +37,7 @@ export function SectionFaq({ fundo, titulo, itens }: SectionFaqType) {
                 onClick={() => setAberto(estaAberto ? null : i)}
                 className="flex w-full items-center justify-between gap-4 py-5 text-left"
               >
-                <h3 className="text-[15px] font-medium leading-snug text-section-light-fg sm:text-[17px] md:text-[19px]">
+                <h3 className="text-[15px] font-medium leading-snug text-section-light-fg sm:text-[17px] md:text-[17px]">
                   {item.pergunta}
                 </h3>
                 <span
@@ -56,7 +56,7 @@ export function SectionFaq({ fundo, titulo, itens }: SectionFaqType) {
                     style={{ gridTemplateRows: estaAberto ? "1fr" : "0fr" }}
                   >
                     <div className="min-h-0">
-                      <p className="pb-5 pr-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-light-fg/80 sm:pr-10 sm:text-[15px] md:text-[17px] md:leading-[1.75]">
+                      <p className="pb-5 pr-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-light-fg/80 sm:pr-10 sm:text-[15px] md:text-[16px] md:leading-[1.75]">
                         {item.resposta}
                       </p>
                     </div>
