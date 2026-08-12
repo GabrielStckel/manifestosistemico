@@ -5,6 +5,17 @@ import type { SectionMentiras as SectionMentirasType } from "../../content/manif
 export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
   return (
     <SectionShell fundo={fundo}>
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(45% 40% at 15% 25%, var(--red-deep) 0%, transparent 65%)",
+          opacity: 0.28,
+        }}
+      />
+
+      <div className="relative z-10">
       <Reveal className="mx-auto max-w-3xl text-center">
         <h2 className="text-balance font-display font-semibold leading-[1.12] text-[clamp(1.6rem,6.8vw,2.35rem)] md:text-[clamp(1.75rem,3.4vw,2.6rem)]">
           {titulo}
@@ -45,6 +56,7 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
           </Reveal>
         ))}
       </ul>
+      </div>
     </SectionShell>
   );
 }
