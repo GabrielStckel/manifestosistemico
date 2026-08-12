@@ -33,6 +33,8 @@ export function ManifestoPage({ content }: { content: ManifestoContent }) {
             return <SectionSetenios key={key} {...s} />;
           case "paradigma":
             return <SectionParadigma key={key} {...s} />;
+          case "comunidade":
+            return <SectionComunidade key={key} {...s} />;
         }
       })}
     </main>
