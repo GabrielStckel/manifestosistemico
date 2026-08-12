@@ -17,9 +17,11 @@ export type Hero = {
   badge: string;
   h1: string;
   subtitulo: string;
+  apoio: string;
   cta: string;
   microtexto: string;
 };
+
 
 
 export type Fundo = "dark" | "light" | "red";
@@ -84,7 +86,9 @@ export type SectionOferta = {
     de?: string;
     parcelado: string;
     aVista: string;
+    nota?: string;
   };
+
   cta: string;
   garantia: {
     rotulo: string;
