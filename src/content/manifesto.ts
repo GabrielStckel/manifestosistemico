@@ -25,10 +25,10 @@ export const manifesto: ManifestoContent = {
     h1: "Por que você sabe exatamente o que precisa fazer, mas continua paralisado no mesmo lugar?",
 
     subtitulo:
-      "Descubra como atualizar os princípios inconscientes que \ngovernam suas decisões silenciosamente.\n",
+      "Descubra como atualizar os princípios inconscientes que\ngovernam suas decisões silenciosamente.\n",
 
     apoio:
-      "Trilhas práticas para desarmar o medo de sofrer, romper a \nresistência à mudança e tomar a sua vida.\n",
+      "Trilhas práticas para desarmar o medo de sofrer, romper a\nresistência à mudança e tomar a sua vida.\n",
 
     cta: "Entrar para o Manifesto",
 
