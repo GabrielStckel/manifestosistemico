@@ -69,5 +69,31 @@ export const manifesto: ManifestoContent = {
         },
       ],
     },
+
+    {
+      kind: "setenios",
+      fundo: "light",
+      titulo:
+        "Como o seu \"Sistema Operacional\" foi programado (e por que ele te trava hoje)",
+      abertura:
+        "O seu funcionamento atual não começou na vida adulta. Ele foi desenhado nos seus três primeiros setênios de vida (dos 0 aos 21 anos), o período em que o seu mundo emocional governou a construção do seu ego (o seu \"eu\" individual).",
+      elos: [
+        {
+          titulo: "De 0 a 7 anos (O Registro Sem Filtros)",
+          texto:
+            "Você era puro sentimento, sem senso crítico ou memória racional desenvolvida. Se nesse período faltou segurança física e acolhimento prático, sua capacidade de confiar na vida foi fraturada.",
+        },
+        {
+          titulo: "A Busca Neurótica por Segurança",
+          texto:
+            "Quando a infância é instável, a criança é forçada a amadurecer rápido demais para tentar se proteger. Na vida adulta, essa necessidade de segurança física se transforma em uma busca obsessiva por segurança psicológica e financeira.",
+        },
+        {
+          titulo: "O Medo de Sofrer e o Medo de Mudar",
+          texto:
+            "Para evitar o sofrimento, você limita o seu \"querer\" apenas ao que é seguro e conhecido (sobrevivência). Você prefere o sofrimento familiar e controlável do relacionamento ruim ou do emprego frustrante ao risco do novo. Você fica paralisado pelo medo da mudança, agindo por medo e não pelo que faz sentido.",
+        },
+      ],
+    },
   ],
 };

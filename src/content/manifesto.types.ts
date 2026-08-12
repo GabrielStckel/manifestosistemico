@@ -50,7 +50,15 @@ export type SectionMentiras = {
   }[];
 };
 
-export type ManifestoSection = SectionMentiras;
+export type SectionSetenios = {
+  kind: "setenios";
+  fundo: Fundo;
+  titulo: string;
+  abertura: string;
+  elos: { titulo: string; texto: string }[];
+};
+
+export type ManifestoSection = SectionMentiras | SectionSetenios;
 
 export type ManifestoContent = {
   meta: Meta;

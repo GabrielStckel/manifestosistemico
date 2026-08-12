@@ -1,6 +1,7 @@
 import { Topbar } from "./Topbar";
 import { Hero } from "./Hero";
 import { SectionMentiras } from "./SectionMentiras";
+import { SectionSetenios } from "./SectionSetenios";
 import type {
   ManifestoContent,
   ManifestoSection,
@@ -8,7 +9,7 @@ import type {
 
 // Exaustividade em tempo de compilação: adicionar um novo `kind` à união
 // sem tratar aqui quebra o build.
-type KindsTratados = "mentiras";
+type KindsTratados = "mentiras" | "setenios";
 type _Exaustivo = Exclude<ManifestoSection["kind"], KindsTratados> extends never
   ? true
   : ["kind sem case em ManifestoPage", Exclude<ManifestoSection["kind"], KindsTratados>];
@@ -26,6 +27,8 @@ export function ManifestoPage({ content }: { content: ManifestoContent }) {
         switch (s.kind) {
           case "mentiras":
             return <SectionMentiras key={key} {...s} />;
+          case "setenios":
+            return <SectionSetenios key={key} {...s} />;
         }
       })}
     </main>
