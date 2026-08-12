@@ -37,7 +37,7 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
 
               <span
                 aria-hidden
-                className="pointer-events-none absolute -bottom-4 right-4 z-0 select-none font-display font-semibold leading-none text-brass/[0.07] text-[90px] md:text-[100px]"
+                className="pointer-events-none absolute -bottom-4 right-4 z-0 select-none font-display font-semibold leading-none text-brass/[0.07] text-[70px] sm:text-[90px] md:text-[100px]"
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
