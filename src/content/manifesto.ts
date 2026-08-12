@@ -36,14 +36,8 @@ export const manifesto: ManifestoContent = {
       { icon: "calendar", label: "Vivências ao vivo bimestrais" },
       { icon: "users", label: "Comunidade ativa de membros" },
     ],
-
-    imagem: {
-      alt: "Jonas Peres",
-      width: 1080,
-      height: 1350,
-      placeholderLabel: "Foto do apresentador",
-    },
   },
+
 
   sections: [
     {
