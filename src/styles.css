@@ -106,7 +106,14 @@
   --brass: oklch(0.6842 0.0918 78.5); /* #B8924A */
   --brass-muted: oklch(0.6842 0.0918 78.5 / 0.35);
   --parchment: oklch(0.9101 0.0139 78.94); /* #E8E1D5 */
+  --brass-muted: oklch(0.6842 0.0918 78.5 / 0.35);
+  --parchment: oklch(0.9101 0.0139 78.94); /* #E8E1D5 */
   --on-parchment: oklch(0.1873 0.0102 52.83); /* #17120F */
+
+  /* Variantes de acento para uso sobre pergaminho (fundo claro).
+     O latão padrão rende só 2.23:1 sobre #E8E1D5 e reprova AA. */
+  --brass-ink: oklch(0.4542 0.0745 82.1); /* #6B5220 — 5.67:1 sobre pergaminho */
+  --red-ink: var(--red-deep); /* #7E2020 — 7.64:1 sobre pergaminho */
 
   /* Semânticos de seção — a seção clara do Manifesto é pergaminho, não branco */
   --section-dark-bg: var(--bg-dark);
