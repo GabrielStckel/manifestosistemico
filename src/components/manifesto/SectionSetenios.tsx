@@ -9,56 +9,78 @@ export function SectionSetenios({
   elos,
 }: SectionSeteniosType) {
   return (
-    <SectionShell fundo={fundo} className="py-14">
-      <div>
+    <SectionShell fundo={fundo} className="overflow-hidden py-20 md:py-28">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(60% 45% at 50% 0%, var(--red-deep) 0%, transparent 62%)",
+          opacity: 0.3,
+        }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brass/30 to-transparent"
+      />
+
+      <div className="relative z-10">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <h2 className="text-balance font-display font-semibold leading-[1.12] text-section-light-fg text-[clamp(1.6rem,6.8vw,2.35rem)] md:text-[clamp(1.7rem,3.1vw,2.4rem)]">
+            <p className="text-[10.5px] font-semibold uppercase tracking-[0.26em] text-brass md:text-[12px]">
+              Os três primeiros setênios
+            </p>
+            <h2 className="mt-4 text-balance font-display font-semibold leading-[1.1] tracking-[-0.01em] text-section-dark-fg text-[clamp(1.7rem,7vw,2.4rem)] md:mt-5 md:text-[clamp(2.1rem,3.9vw,2.9rem)]">
               {titulo}
             </h2>
-            <div aria-hidden className="mx-auto mt-6 h-px w-12 bg-brass/60" />
+            <div aria-hidden className="mt-7 flex items-center justify-center gap-3">
+              <span className="h-px w-12 bg-gradient-to-r from-transparent to-brass/60 md:w-16" />
+              <span className="h-1 w-1 rotate-45 bg-brass" />
+              <span className="h-px w-12 bg-gradient-to-l from-transparent to-brass/60 md:w-16" />
+            </div>
           </Reveal>
 
           <Reveal delay={120}>
-            <p className="mx-auto mt-6 max-w-[58ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base md:text-[18px] md:leading-[1.75]">
+            <p className="mx-auto mt-7 max-w-[60ch] text-left hyphens-auto md:text-justify text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base md:text-[18px] md:leading-[1.75]">
               {abertura}
             </p>
           </Reveal>
         </div>
 
-        <ol className="relative mx-auto mt-14 max-w-2xl">
+        <ol className="relative mx-auto mt-14 max-w-3xl md:mt-16">
           {elos.map((elo, i) => (
             <Reveal
               as="li"
               key={elo.titulo}
               delay={i * 120}
-              className="relative block pl-11 pb-10 last:pb-0 md:pl-12"
+              className="relative block pl-12 pb-8 last:pb-0 md:pl-16"
             >
               {i < elos.length - 1 ? (
                 <div
                   aria-hidden
-                  className="pointer-events-none absolute left-[13px] top-8 -bottom-1 w-px bg-brass/30 md:left-[15px] md:top-9"
+                  className="pointer-events-none absolute left-[17px] top-10 -bottom-1 w-px bg-gradient-to-b from-brass/50 via-brass/20 to-transparent md:left-[23px]"
                 />
               ) : null}
 
               <span
                 aria-hidden
-                className="absolute left-0 top-1 flex h-7 w-7 items-center justify-center rounded-full border border-brass/50 bg-section-light-bg text-[11px] font-semibold text-brass-ink md:text-[12px] md:h-8 md:w-8"
+                className="absolute left-0 top-1 flex h-9 w-9 items-center justify-center rounded-full border border-brass/45 bg-black/60 font-display text-[12px] font-semibold text-brass shadow-[0_0_28px_-6px_var(--brass)] md:h-12 md:w-12 md:text-[14px]"
               >
                 {String(i + 1).padStart(2, "0")}
                 <span
                   aria-hidden
-                  className="pointer-events-none absolute inset-[-5px] rounded-full border border-brass/20"
+                  className="pointer-events-none absolute inset-[-6px] rounded-full border border-brass/15"
                 />
               </span>
 
-
-              <h3 className="font-display text-[17px] font-semibold leading-snug text-section-light-fg sm:text-[19px] md:text-[22px]">
-                {elo.titulo}
-              </h3>
-              <p className="mt-2.5 max-w-[62ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base md:text-[18px] md:leading-[1.75]">
-                {elo.texto}
-              </p>
+              <div className="rounded-lg border border-white/10 bg-gradient-to-b from-white/[0.055] to-white/[0.015] p-5 transition-colors hover:border-brass/35 md:p-7">
+                <h3 className="font-display text-[17px] font-semibold leading-snug text-section-dark-fg sm:text-[19px] md:text-[23px]">
+                  {elo.titulo}
+                </h3>
+                <p className="mt-3 max-w-[64ch] text-left hyphens-auto md:text-justify text-[15px] leading-relaxed text-section-dark-fg/75 sm:text-base md:text-[18px] md:leading-[1.75]">
+                  {elo.texto}
+                </p>
+              </div>
             </Reveal>
           ))}
         </ol>

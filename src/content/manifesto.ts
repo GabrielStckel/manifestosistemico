@@ -63,7 +63,7 @@ export const manifesto: ManifestoContent = {
 
     {
       kind: "setenios",
-      fundo: "light",
+      fundo: "dark",
       titulo:
         "Como o seu \"Sistema Operacional\" foi programado (e por que ele te trava hoje)",
       abertura:
