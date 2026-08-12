@@ -1,24 +1,9 @@
-import { ArrowRight, CalendarDays, Infinity, PlayCircle, Users } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { CampoConstelacao } from "./CampoConstelacao";
 import { Orbe } from "./Orbe";
 import type { Hero as HeroType } from "../../content/manifesto.types";
 
-const ICONS = {
-  play: PlayCircle,
-  users: Users,
-  calendar: CalendarDays,
-  infinity: Infinity,
-} as const;
-
-export function Hero({
-  badge,
-  h1,
-  subtitulo,
-  apoio,
-  cta,
-  microtexto,
-  pilulas,
-}: HeroType) {
+export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
   return (
     <section className="relative flex min-h-[94svh] items-center overflow-hidden bg-section-dark-bg px-5 pb-12 pt-24 text-section-dark-fg sm:px-8 md:min-h-[88vh] md:pb-24 md:pt-28">
       {/* Camadas de fundo — todas decorativas */}
@@ -70,17 +55,10 @@ export function Hero({
         </h1>
 
         <p
-          className="mt-5 max-w-[34ch] text-[16px] leading-[1.55] text-section-dark-fg/85 md:mt-7 md:max-w-[46ch] md:text-[18px] md:leading-relaxed"
+          className="mt-5 max-w-[46ch] text-[15px] leading-[1.6] text-section-dark-fg/85 md:mt-7 md:max-w-[62ch] md:text-[16.5px] md:leading-[1.7]"
           style={{ textShadow: "var(--text-shadow-soft)" }}
         >
           {subtitulo}
-        </p>
-
-        <p
-          className="hidden text-section-dark-fg/65 md:mt-5 md:block md:max-w-[64ch] md:text-[15px] md:leading-[1.7]"
-          style={{ textShadow: "var(--text-shadow-soft)" }}
-        >
-          {apoio}
         </p>
 
         <a
@@ -98,23 +76,6 @@ export function Hero({
           {microtexto}
         </p>
 
-        <ul className="mt-9 grid w-full max-w-[340px] grid-cols-2 gap-px overflow-hidden rounded-md bg-white/8 sm:mt-10 sm:flex sm:max-w-none sm:gap-x-8 sm:bg-transparent sm:rounded-none md:mt-12 md:gap-x-8 md:border-t md:border-white/10 md:pt-7 md:text-[12.5px]">
-          {pilulas.map((p) => {
-            const Icon = ICONS[p.icon];
-            return (
-              <li
-                key={p.icon + p.label}
-                className="flex min-w-0 items-start gap-2 bg-section-dark-bg/70 px-3 py-3 text-left text-[11.5px] font-medium leading-[1.35] text-section-dark-fg/80 sm:items-center sm:bg-transparent sm:p-0 sm:text-[13px]"
-              >
-                <Icon
-                  aria-hidden="true"
-                  className="mt-[1px] h-3.5 w-3.5 shrink-0 text-brass sm:mt-0"
-                />
-                {p.label}
-              </li>
-            );
-          })}
-        </ul>
       </div>
     </section>
   );
