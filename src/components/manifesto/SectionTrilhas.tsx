@@ -32,7 +32,7 @@ function Medalhao({ trilha }: { trilha: Trilha }) {
             "radial-gradient(60% 60% at 50% 50%, var(--brass-glow) 0%, transparent 70%)",
         }}
       />
-      <span className="relative font-display text-[19px] font-semibold leading-none text-brass md:text-[22px]">
+      <span className="relative font-display text-[19px] font-semibold leading-none text-brass md:text-[20px]">
         {trilha.numero}
       </span>
     </div>
@@ -62,7 +62,7 @@ export function SectionTrilhas({ fundo, titulo, trilhas }: SectionTrilhasType) {
         </div>
 
         <Reveal>
-          <h2 className="mx-auto mt-8 max-w-3xl text-balance text-center font-display text-[clamp(1.65rem,6.6vw,2.25rem)] font-semibold leading-[1.14] tracking-[-0.015em] md:mt-10 md:text-[clamp(2rem,3.4vw,2.7rem)] md:leading-[1.1]">
+          <h2 className="mx-auto mt-8 max-w-3xl text-balance text-center font-display text-[clamp(1.65rem,6.6vw,2.25rem)] font-semibold leading-[1.14] tracking-[-0.015em] md:mt-10 md:text-[clamp(1.7rem,2.9vw,2.25rem)] md:leading-[1.1]">
             {titulo}
           </h2>
         </Reveal>
@@ -104,7 +104,7 @@ export function SectionTrilhas({ fundo, titulo, trilhas }: SectionTrilhasType) {
                   </div>
                 </div>
 
-                <h3 className="relative mt-5 font-display text-[18px] font-semibold leading-snug text-section-dark-fg md:text-[22px]">
+                <h3 className="relative mt-5 font-display text-[18px] font-semibold leading-snug text-section-dark-fg md:text-[19px]">
                   {trilha.titulo}
                 </h3>
 
@@ -113,7 +113,7 @@ export function SectionTrilhas({ fundo, titulo, trilhas }: SectionTrilhasType) {
                   className="relative mt-4 block h-px w-14 bg-gradient-to-r from-brass/60 to-transparent transition-all duration-300 group-hover:w-24"
                 />
 
-                <p className="relative mt-4 text-left text-[15px] leading-[1.75] text-section-dark-fg/75 md:text-[17.5px] md:leading-[1.8]">
+                <p className="relative mt-4 text-left text-[15px] leading-[1.75] text-section-dark-fg/75 md:text-[16px] md:leading-[1.8]">
                   {trilha.texto}
                 </p>
               </article>

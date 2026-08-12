@@ -52,7 +52,7 @@ export function SectionOferta({
           <p className="text-center text-[10.5px] font-semibold uppercase tracking-[0.26em] text-brass md:text-[12px]">
             Sua decisão
           </p>
-          <h2 className="mx-auto mt-4 max-w-3xl text-balance text-center font-display font-semibold leading-[1.08] tracking-[-0.01em] text-[clamp(2rem,8vw,2.7rem)] md:mt-5 md:text-[clamp(2.4rem,4.4vw,3.3rem)]">
+          <h2 className="mx-auto mt-4 max-w-3xl text-balance text-center font-display font-semibold leading-[1.08] tracking-[-0.01em] text-[clamp(2rem,8vw,2.7rem)] md:mt-5 md:text-[clamp(2rem,3.6vw,2.75rem)]">
             {titulo}
           </h2>
           <div aria-hidden className="mt-7 flex items-center justify-center gap-3">
@@ -77,7 +77,7 @@ export function SectionOferta({
                     {inclui.map((item) => (
                       <li
                         key={item}
-                        className="flex gap-3.5 text-[15px] leading-relaxed text-section-dark-fg/85 md:text-[17px] md:leading-[1.7]"
+                        className="flex gap-3.5 text-[15px] leading-relaxed text-section-dark-fg/85 md:text-[16px] md:leading-[1.7]"
                       >
                         <span
                           aria-hidden
@@ -103,11 +103,11 @@ export function SectionOferta({
                     </p>
                   ) : null}
 
-                  <p className="mt-4 break-words font-display font-semibold leading-[0.95] tracking-[-0.02em] text-section-dark-fg text-[clamp(2.2rem,10vw,3rem)] md:text-[clamp(2.4rem,3.6vw,3.2rem)]">
+                  <p className="mt-4 break-words font-display font-semibold leading-[0.95] tracking-[-0.02em] text-section-dark-fg text-[clamp(2.2rem,10vw,3rem)] md:text-[clamp(2rem,3vw,2.7rem)]">
                     {preco.parcelado}
                   </p>
 
-                  <p className="mt-3 text-[15px] text-section-dark-fg/70 md:text-[17px]">
+                  <p className="mt-3 text-[15px] text-section-dark-fg/70 md:text-[16px]">
                     {preco.aVista}
                   </p>
 
@@ -119,7 +119,7 @@ export function SectionOferta({
 
                   <a
                     href={CHECKOUT_URL}
-                    className="group relative mt-8 flex min-h-[60px] w-full items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/15 bg-gradient-to-b from-red-primary to-red-primary-hover px-5 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.05em] text-on-red shadow-[0_0_32px_rgba(211,58,52,0.28),0_20px_55px_-18px_var(--red-accent)] transition-all hover:shadow-[0_0_48px_rgba(211,58,52,0.42),0_26px_70px_-16px_var(--red-accent)] hover:brightness-110 active:scale-[0.98] sm:text-[15px] md:text-[16px]"
+                    className="group relative mt-8 flex min-h-[60px] w-full items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/15 bg-gradient-to-b from-red-primary to-red-primary-hover px-5 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.05em] text-on-red shadow-[0_0_32px_rgba(211,58,52,0.28),0_20px_55px_-18px_var(--red-accent)] transition-all hover:shadow-[0_0_48px_rgba(211,58,52,0.42),0_26px_70px_-16px_var(--red-accent)] hover:brightness-110 active:scale-[0.98] sm:text-[15px] md:text-[15px]"
                   >
                     <span
                       aria-hidden="true"
@@ -192,10 +192,10 @@ export function SectionOferta({
           <div className="mx-auto mt-8 flex max-w-3xl gap-4 rounded-lg border border-brass/20 bg-black/30 p-6 text-left md:p-7">
             <ShieldCheck aria-hidden className="mt-0.5 h-6 w-6 shrink-0 text-brass" />
             <div>
-              <p className="font-display text-[16px] font-semibold text-section-dark-fg md:text-[19px]">
+              <p className="font-display text-[16px] font-semibold text-section-dark-fg md:text-[17px]">
                 {garantia.rotulo}
               </p>
-              <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 md:text-[17px] md:leading-[1.75]">
+              <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 md:text-[16px] md:leading-[1.75]">
                 {garantia.texto}
               </p>
             </div>
