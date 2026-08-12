@@ -61,6 +61,7 @@
   /* Acento próprio do Manifesto */
   --color-brass: var(--brass);
   --color-brass-muted: var(--brass-muted);
+  --color-brass-glow: var(--brass-glow);
   --color-brass-ink: var(--brass-ink);
   --color-red-ink: var(--red-ink);
   --color-parchment: var(--parchment);
@@ -105,6 +106,10 @@
   /* Acento próprio do Manifesto — permanência, não urgência */
   --brass: oklch(0.6842 0.0918 78.5); /* #B8924A */
   --brass-muted: oklch(0.6842 0.0918 78.5 / 0.35);
+
+  /* Latão luminoso — uso EXCLUSIVO em efeitos (partículas, halos, brilhos).
+     Nunca em texto: não tem contraste para isso. */
+  --brass-glow: oklch(0.8 0.12 82);
   --parchment: oklch(0.9101 0.0139 78.94); /* #E8E1D5 */
   --on-parchment: oklch(0.1873 0.0102 52.83); /* #17120F */
 
