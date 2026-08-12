@@ -23,7 +23,7 @@ export function SectionParadigma({
 
       <div className="relative z-10">
       <Reveal>
-        <h2 className="mx-auto max-w-[16ch] text-pretty text-center font-display font-semibold leading-[1.2] text-[clamp(1.35rem,5.6vw,2rem)] sm:max-w-[20ch] sm:text-[clamp(1.5rem,6.2vw,2.2rem)] md:max-w-4xl md:text-[clamp(1.75rem,3.2vw,2.5rem)] md:leading-[1.12]">
+        <h2 className="mx-auto max-w-[15ch] text-pretty text-center font-display font-semibold leading-[1.2] text-[clamp(1.15rem,4.8vw,1.7rem)] sm:max-w-[18ch] sm:text-[clamp(1.25rem,5.2vw,1.85rem)] md:max-w-4xl md:text-[clamp(1.75rem,3.2vw,2.5rem)] md:leading-[1.12]">
           {titulo}
         </h2>
       </Reveal>
