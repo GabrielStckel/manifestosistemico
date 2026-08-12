@@ -96,7 +96,7 @@ export function Hero({
             <ArrowRight className="h-4 w-4" />
           </a>
 
-          <p className="mt-3 max-w-[460px] text-[13px] leading-snug text-muted-foreground">
+          <p className="mt-3 max-w-[460px] text-[14px] leading-snug text-muted-foreground">
             {microtexto}
           </p>
 
@@ -106,7 +106,7 @@ export function Hero({
               return (
                 <span
                   key={p.icon + p.label}
-                  className="inline-flex items-center gap-2 rounded-pill border border-white/12 bg-black/40 px-3 py-1.5 text-[12px] font-medium text-section-dark-fg"
+                  className="inline-flex items-center gap-2 rounded-pill border border-white/12 bg-black/40 px-3 py-1.5 text-[13px] font-medium text-section-dark-fg"
                 >
                   <Icon className="h-3.5 w-3.5 text-brass" />
                   {p.label}
