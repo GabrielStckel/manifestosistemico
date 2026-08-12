@@ -39,8 +39,8 @@ export function Hero({
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(55% 45% at 50% 45%, var(--red-accent) 0%, transparent 60%), radial-gradient(38% 32% at 50% 42%, var(--red-deep) 0%, transparent 65%)",
-          opacity: 0.42,
+            "radial-gradient(62% 52% at 50% 44%, var(--red-accent) 0%, transparent 66%), radial-gradient(42% 34% at 50% 40%, var(--red-deep) 0%, transparent 70%)",
+          opacity: 0.24,
         }}
       />
       <div
