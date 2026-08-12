@@ -4,6 +4,7 @@ import { SectionMentiras } from "./SectionMentiras";
 import { SectionSetenios } from "./SectionSetenios";
 import { SectionParadigma } from "./SectionParadigma";
 import { SectionComunidade } from "./SectionComunidade";
+import { SectionColetivo } from "./SectionColetivo";
 import { SectionTrilhas } from "./SectionTrilhas";
 import type {
   ManifestoContent,
@@ -36,6 +37,8 @@ export function ManifestoPage({ content }: { content: ManifestoContent }) {
             return <SectionParadigma key={key} {...s} />;
           case "comunidade":
             return <SectionComunidade key={key} {...s} />;
+          case "coletivo":
+            return <SectionColetivo key={key} {...s} />;
           case "trilhas":
             return <SectionTrilhas key={key} {...s} />;
         }
