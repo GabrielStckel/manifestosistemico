@@ -127,7 +127,7 @@ export const manifesto: ManifestoContent = {
     },
     {
       kind: "comunidade",
-      fundo: "light",
+      fundo: "red",
       titulo:
         "O Manifesto Sist\u00EAmico:\nUm movimento integrado de evolu\u00E7\u00E3o cont\u00EDnua",
       texto:
