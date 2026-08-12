@@ -32,10 +32,10 @@ export function SectionParadigma({
         {/* Bloco antigo — única caixa da seção, inerte */}
         <Reveal className="md:col-span-5">
           <div className="rounded-lg border border-white/8 bg-black/40 p-6 text-left sm:p-8">
-            <h3 className="font-display text-[20px] font-semibold leading-snug text-section-dark-fg/70 sm:text-[22px]">
+            <h3 className="font-display text-[20px] font-semibold leading-snug text-section-dark-fg/70 sm:text-[22px] md:text-[24px]">
               {antigo.nome}
             </h3>
-            <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/50 sm:text-base">
+            <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/50 sm:text-base md:text-[18px] md:leading-[1.75]">
               {antigo.texto}
             </p>
           </div>
@@ -58,10 +58,10 @@ export function SectionParadigma({
         {/* Bloco novo — aberto */}
         <div className="text-left md:col-span-5">
           <Reveal>
-            <h3 className="font-display text-[20px] font-semibold leading-snug text-section-dark-fg sm:text-[22px]">
+            <h3 className="font-display text-[20px] font-semibold leading-snug text-section-dark-fg sm:text-[22px] md:text-[24px]">
               {novo.nome}
             </h3>
-            <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base">
+            <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base md:text-[18px] md:leading-[1.75]">
               {novo.transicao}
             </p>
           </Reveal>
@@ -74,10 +74,10 @@ export function SectionParadigma({
                 delay={(i + 1) * 100}
                 className="relative block border-l border-brass/30 pl-5"
               >
-                <h4 className="font-display text-[16px] font-semibold leading-snug text-section-dark-fg sm:text-[17px]">
+                <h4 className="font-display text-[16px] font-semibold leading-snug text-section-dark-fg sm:text-[17px] md:text-[20px]">
                   {item.titulo}
                 </h4>
-                <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-[15px]">
+                <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-[15px] md:text-[17px] md:leading-[1.7]">
                   {item.texto}
                 </p>
               </Reveal>

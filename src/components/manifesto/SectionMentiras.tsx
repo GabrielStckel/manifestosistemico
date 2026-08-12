@@ -26,7 +26,7 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
         {itens.map((item, i) => (
           <Reveal as="li" key={item.rotulo} delay={i * 120} className="h-full">
             <article className="relative h-full overflow-hidden rounded-lg border border-white/10 bg-surface-dark/60 p-6 text-left sm:p-8">
-              <p className="relative z-10 text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
+              <p className="relative z-10 text-[10px] font-semibold uppercase tracking-[0.18em] text-brass md:text-[12px]">
                 {item.rotulo}
               </p>
 
@@ -38,11 +38,11 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
 
               <div aria-hidden className="relative z-10 mt-6 h-px w-12 bg-brass/50" />
 
-              <p className="relative z-10 mt-6 text-[11px] font-semibold uppercase tracking-[0.14em] text-red-accent">
+              <p className="relative z-10 mt-6 text-[11px] font-semibold uppercase tracking-[0.14em] text-red-accent md:text-[12px]">
                 {item.rotuloVerdade}
               </p>
 
-              <p className="relative z-10 mt-3 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/90 sm:text-base">
+              <p className="relative z-10 mt-3 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/90 sm:text-base md:text-[18px] md:leading-[1.75]">
                 {item.verdade}
               </p>
 
