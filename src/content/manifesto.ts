@@ -27,13 +27,11 @@ export const manifesto: ManifestoContent = {
     subtitulo:
       "Descubra como atualizar os princípios inconscientes que\ngovernam suas decisões silenciosamente.\n",
 
-    apoio:
-      "Trilhas práticas para desarmar o medo de sofrer, romper a\nresistência à mudança e tomar a sua vida.\n",
-
     cta: "Entrar para o Manifesto",
 
     microtexto: "Acesso imediato a todas as trilhas no Hotmart Club. 2 anos de acesso.",
   },
+
 
 
 

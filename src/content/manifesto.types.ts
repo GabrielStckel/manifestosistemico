@@ -17,10 +17,10 @@ export type Hero = {
   badge: string;
   h1: string;
   subtitulo: string;
-  apoio: string;
   cta: string;
   microtexto: string;
 };
+
 
 
 
