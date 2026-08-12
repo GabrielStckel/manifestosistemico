@@ -17,7 +17,7 @@ export const manifesto: ManifestoContent = {
   hero: {
     badge: "O DESPERTAR DE UM NOVO MODO DE FUNCIONAMENTO DA CONSCIÊNCIA",
 
-    h1: "Por que você sabe exatamente o que precisa fazer,\nmas continua paralisado no mesmo lugar?",
+    h1: "Por que você sabe exatamente o que precisa fazer,\nmas continua paralisado no\u00A0mesmo lugar?",
 
     subtitulo:
       "Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente.",

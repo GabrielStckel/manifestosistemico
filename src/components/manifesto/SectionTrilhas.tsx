@@ -30,7 +30,7 @@ function Capa({ trilha }: { trilha: Trilha }) {
           />
           <span
             aria-hidden
-            className="relative font-display text-[64px] font-semibold leading-none text-brass/25 transition-colors duration-300 group-hover:text-brass/40 sm:text-[72px]"
+            className="relative font-display text-[52px] font-semibold leading-none text-brass/25 transition-colors duration-300 group-hover:text-brass/40 sm:text-[72px]"
           >
             {trilha.numero}
           </span>
@@ -53,7 +53,7 @@ export function SectionTrilhas({
   trilhas,
 }: SectionTrilhasType) {
   return (
-    <SectionShell fundo={fundo}>
+    <SectionShell fundo={fundo} className="py-14">
       <Reveal>
         <h2 className="mx-auto max-w-3xl text-balance text-center font-display font-semibold leading-[1.12] text-[clamp(1.6rem,6.8vw,2.3rem)] md:text-[clamp(1.75rem,3.2vw,2.5rem)]">
           {titulo}
