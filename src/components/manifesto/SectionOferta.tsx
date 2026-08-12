@@ -67,7 +67,14 @@ export function SectionOferta({
 
             <p className="mt-3 text-[15px] text-section-dark-fg/70 md:text-[17px]">{preco.aVista}</p>
 
+            {preco.nota ? (
+              <p className="mx-auto mt-5 max-w-[46ch] text-[13px] leading-relaxed text-muted-foreground">
+                {preco.nota}
+              </p>
+            ) : null}
+
             <a
+
               href={CHECKOUT_URL}
               className="mt-8 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-cta bg-red-primary px-4 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-normal text-on-red shadow-lg shadow-red-deep/40 transition-colors hover:bg-red-primary-hover sm:px-6 sm:text-[15px] sm:tracking-wide md:text-[16px]"
             >
