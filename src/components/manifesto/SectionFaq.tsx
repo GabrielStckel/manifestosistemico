@@ -29,24 +29,24 @@ export function SectionFaq({ fundo, titulo, itens }: SectionFaqType) {
 
               return (
                 <Reveal as="li" key={item.pergunta} className="border-b border-black/10">
-                  <button
-                    type="button"
-                    id={botaoId}
-                    aria-expanded={estaAberto}
-                    aria-controls={painelId}
-                    onClick={() => setAberto(estaAberto ? null : i)}
-                    className="flex w-full items-center justify-between gap-4 py-5 text-left"
-                  >
-                    <span className="text-[15px] font-medium leading-snug text-section-light-fg sm:text-[17px]">
-                      {item.pergunta}
-                    </span>
-                    <span
-                      aria-hidden
-                      className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-brass/40 bg-transparent text-brass-ink"
-                    >
-                      {estaAberto ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
-                    </span>
-                  </button>
+              <button
+                type="button"
+                id={botaoId}
+                aria-expanded={estaAberto}
+                aria-controls={painelId}
+                onClick={() => setAberto(estaAberto ? null : i)}
+                className="flex w-full items-center justify-between gap-4 py-5 text-left"
+              >
+                <h3 className="text-[15px] font-medium leading-snug text-section-light-fg sm:text-[17px]">
+                  {item.pergunta}
+                </h3>
+                <span
+                  aria-hidden
+                  className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-brass/40 bg-transparent text-brass-ink"
+                >
+                  {estaAberto ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+                </span>
+              </button>
 
                   <div
                     id={painelId}
