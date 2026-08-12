@@ -99,7 +99,7 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           />
         </a>
 
-        <p className="mt-4 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:max-w-none md:text-[14px]">
+        <p className="mt-5 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:mt-7 md:max-w-none md:text-[14px]">
           {microtexto}
         </p>
 
