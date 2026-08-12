@@ -13,11 +13,20 @@ export function CtaBar({ label }: { label: string }) {
       const deveMostrar = window.scrollY > 400 && !ofertaVisivel;
       setVisivel(deveMostrar);
 
-      const alvo = document.elementFromPoint(
+      // elementsFromPoint (plural) para ignorar a pr\u00f3pria barra fixa,
+      // que cobre o ponto de amostragem.
+      const pilha = document.elementsFromPoint(
         window.innerWidth / 2,
         window.innerHeight - 40,
       );
-      const secao = alvo?.closest("[data-section-bg]");
+      let secao: Element | null = null;
+      for (const el of pilha) {
+        const s = el.closest("[data-section-bg]");
+        if (s) {
+          secao = s;
+          break;
+        }
+      }
       setSobreClaro(secao?.getAttribute("data-section-bg") === "light");
     };
 
