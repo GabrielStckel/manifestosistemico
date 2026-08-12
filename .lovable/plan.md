@@ -4,7 +4,7 @@ Nenhuma seção, copy ou dependência nova. Só profundidade visual: campo de co
 
 ## O que muda
 
-1. **Tokens** (`src/styles.css`): `--brass-glow`, `--orbita-lenta`, `--orbita-media` em `:root` e `--color-brass-glow` no `@theme inline`. `--brass-glow` é exclusivo de efeito, nunca de texto.
+1. **Tokens** (`src/styles.css`): apenas `--brass-glow` em `:root` e `--color-brass-glow` no `@theme inline`. Sem `--orbita-lenta`/`--orbita-media` (seriam CSS morto). `--brass-glow` é exclusivo de efeito, nunca de texto.
 
 2. **Campo de constelação** — novo `src/components/manifesto/CampoConstelacao.tsx`: canvas confinado ao hero, partículas em latão ligadas por linhas finas, reação ao cursor no desktop. Três invariantes: canvas dentro do hero (não `fixed`), loop pausado por `IntersectionObserver`, cálculo de linhas por grade espacial (não laço duplo). 30fps alvo, densidade menor no toque, e nada inicia sob `prefers-reduced-motion`.
 
