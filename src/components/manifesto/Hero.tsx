@@ -62,19 +62,10 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
         </p>
 
         <h1
-          className="mt-7 text-balance font-display text-[clamp(1.65rem,6.2vw,2.2rem)] font-semibold leading-[1.2] tracking-[-0.015em] md:mt-9 md:max-w-[24ch] md:text-[clamp(2.05rem,3.9vw,2.85rem)] md:leading-[1.16] md:tracking-[-0.02em]"
+          className="mt-7 text-balance font-display text-[clamp(1.75rem,6.4vw,2.3rem)] font-semibold leading-[1.24] tracking-[-0.015em] md:mt-9 md:max-w-[26ch] md:text-[clamp(2.1rem,4.1vw,2.95rem)] md:leading-[1.18] md:tracking-[-0.02em]"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
-          <span className="block">{h1.split(",")[0]},</span>
-          <span className="mt-1 block md:mt-2">
-            {h1.split(",")[1]?.trim().replace("paralisado no mesmo lugar?", "")}
-            <span
-              className="font-semibold text-brass"
-              style={{ textShadow: "0 0 42px color-mix(in oklab, var(--brass) 45%, transparent)" }}
-            >
-              paralisado no mesmo lugar?
-            </span>
-          </span>
+          {h1}
         </h1>
 
         <div
