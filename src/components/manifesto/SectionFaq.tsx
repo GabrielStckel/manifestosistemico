@@ -56,7 +56,7 @@ export function SectionFaq({ fundo, titulo, itens }: SectionFaqType) {
                     style={{ gridTemplateRows: estaAberto ? "1fr" : "0fr" }}
                   >
                     <div className="min-h-0">
-                      <p className="pb-5 pr-10 text-[14.5px] leading-relaxed text-section-light-fg/80 sm:text-[15px]">
+                      <p className="pb-5 pr-2 text-[14.5px] leading-relaxed text-section-light-fg/80 sm:pr-10 sm:text-[15px]">
                         {item.resposta}
                       </p>
                     </div>
