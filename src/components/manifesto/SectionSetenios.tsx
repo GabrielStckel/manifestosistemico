@@ -46,6 +46,10 @@ export function SectionSetenios({
                 className="absolute left-0 top-1 flex h-7 w-7 items-center justify-center rounded-full border border-brass/50 bg-section-light-bg text-[11px] font-semibold text-brass-ink md:h-8 md:w-8"
               >
                 {String(i + 1).padStart(2, "0")}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute inset-[-5px] rounded-full border border-brass/20"
+                />
               </span>
 
 

@@ -1,4 +1,6 @@
 import { ArrowRight, CalendarDays, Infinity, PlayCircle, Users } from "lucide-react";
+import { CampoConstelacao } from "./CampoConstelacao";
+import { Orbe } from "./Orbe";
 import type { Hero as HeroType } from "../../content/manifesto.types";
 
 const ICONS = {
@@ -28,6 +30,10 @@ export function Hero({
             "linear-gradient(160deg, rgba(0,0,0,0.92) 0%, rgba(18,9,9,0.88) 50%, rgba(38,13,13,0.82) 100%)",
         }}
       />
+      <CampoConstelacao />
+
+      <Orbe />
+
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"

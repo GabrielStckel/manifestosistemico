@@ -11,6 +11,17 @@ export function SectionParadigma({
 }: SectionParadigmaType) {
   return (
     <SectionShell fundo={fundo} className="py-14">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(45% 40% at 85% 40%, var(--red-deep) 0%, transparent 65%)",
+          opacity: 0.28,
+        }}
+      />
+
+      <div className="relative z-10">
       <Reveal>
         <h2 className="mx-auto max-w-4xl text-balance text-center font-display font-semibold leading-[1.12] text-[clamp(1.6rem,6.8vw,2.3rem)] md:text-[clamp(1.75rem,3.2vw,2.5rem)]">
           {titulo}
@@ -79,6 +90,7 @@ export function SectionParadigma({
             ))}
           </ul>
         </div>
+      </div>
       </div>
     </SectionShell>
   );
