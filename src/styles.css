@@ -106,8 +106,6 @@
   --brass: oklch(0.6842 0.0918 78.5); /* #B8924A */
   --brass-muted: oklch(0.6842 0.0918 78.5 / 0.35);
   --parchment: oklch(0.9101 0.0139 78.94); /* #E8E1D5 */
-  --brass-muted: oklch(0.6842 0.0918 78.5 / 0.35);
-  --parchment: oklch(0.9101 0.0139 78.94); /* #E8E1D5 */
   --on-parchment: oklch(0.1873 0.0102 52.83); /* #17120F */
 
   /* Variantes de acento para uso sobre pergaminho (fundo claro).
