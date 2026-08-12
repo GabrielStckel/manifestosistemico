@@ -58,9 +58,10 @@ export function CampoConstelacao() {
     const preencherGrade = () => {
       grade = Array.from({ length: cols * linhas }, () => [] as number[]);
       for (let i = 0; i < pts.length; i++) {
-        const c = Math.min(cols - 1, Math.max(0, Math.floor(pts[i].x / DIST)));
-        const l = Math.min(linhas - 1, Math.max(0, Math.floor(pts[i].y / DIST)));
-        grade[l * cols + c].push(i);
+        const p = pts[i]!;
+        const c = Math.min(cols - 1, Math.max(0, Math.floor(p.x / DIST)));
+        const l = Math.min(linhas - 1, Math.max(0, Math.floor(p.y / DIST)));
+        grade[l * cols + c]!.push(i);
       }
     };
 
@@ -102,7 +103,7 @@ export function CampoConstelacao() {
       for (let l = 0; l < linhas; l++) {
         for (let c = 0; c < cols; c++) {
           const atual = grade[l * cols + c];
-          if (!atual.length) continue;
+          if (!atual || !atual.length) continue;
           const vizinhas = [
             atual,
             grade[l * cols + c + 1],
@@ -111,12 +112,12 @@ export function CampoConstelacao() {
             grade[(l + 1) * cols + c + 1],
           ];
           for (const idxA of atual) {
-            const a = pts[idxA];
+            const a = pts[idxA]!;
             for (const celula of vizinhas) {
               if (!celula) continue;
               for (const idxB of celula) {
                 if (idxB <= idxA) continue;
-                const b = pts[idxB];
+                const b = pts[idxB]!;
                 const dx = a.x - b.x,
                   dy = a.y - b.y;
                 const d2 = dx * dx + dy * dy;
@@ -158,8 +159,8 @@ export function CampoConstelacao() {
     raf = requestAnimationFrame(desenhar);
 
     const io = new IntersectionObserver(
-      ([e]) => {
-        rodando = e.isIntersecting;
+      (entradas) => {
+        rodando = entradas[0]?.isIntersecting ?? false;
       },
       { threshold: 0 },
     );
