@@ -12,7 +12,7 @@ import type {
 
 // Exaustividade em tempo de compilação: adicionar um novo `kind` à união
 // sem tratar aqui quebra o build.
-type KindsTratados = "mentiras" | "setenios" | "paradigma" | "comunidade" | "trilhas";
+type KindsTratados = "mentiras" | "setenios" | "paradigma" | "comunidade" | "coletivo" | "trilhas";
 type _Exaustivo = Exclude<ManifestoSection["kind"], KindsTratados> extends never
   ? true
   : ["kind sem case em ManifestoPage", Exclude<ManifestoSection["kind"], KindsTratados>];

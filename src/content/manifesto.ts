@@ -179,5 +179,12 @@ export const manifesto: ManifestoContent = {
         },
       ],
     },
+    {
+      kind: "coletivo",
+      fundo: "red",
+      titulo: "Por que mudar sozinho é quase impossível?",
+      texto:
+        "No esforço inconsciente de pertencer ao nosso sistema familiar e ao meio em que vivemos, nós tendemos a repetir os mesmos comportamentos doentios para não nos sentirmos excluídos. Romper com o paradigma antigo gera um medo profundo de solidão. É por isso que o Manifesto é um movimento coletivo. Ao se unir a centenas de pessoas que buscam a mesma transição de consciência, nós alimentamos um campo mórfico de mudança.",
+    },
   ],
 };
