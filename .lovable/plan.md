@@ -14,16 +14,22 @@ Criar apenas a base técnica do Manifesto Sistêmico. Nenhuma copy, nenhuma seç
 
 Não serão criados Topbar, CtaBar, hero, oferta, FAQ, rodapé nem ManifestoPage nesta etapa (a arquitetura de pastas fica pronta, os arquivos entram nas próximas etapas).
 
-## Ponto que precisa da sua aprovação
+## Ajustes aprovados
 
-O projeto ainda **não tem `@fontsource/lora` nem `@fontsource/inter`** instalados. Como a regra proíbe Google Fonts via CDN, preciso instalar esses dois pacotes (só eles, nenhuma outra dependência).
+- Instalar apenas `@fontsource/lora` e `@fontsource/inter`.
+- **Sem `tw-animate-css`**: a linha `@import "tw-animate-css";` sai do `styles.css`. Todo movimento vem do `Reveal` e de `transition-colors`.
+- Preload das fontes no `__root.tsx` resolvido exatamente por:
+  ```ts
+  import lora700Url from "@fontsource/lora/files/lora-latin-700-normal.woff2?url";
+  import inter400Url from "@fontsource/inter/files/inter-latin-400-normal.woff2?url";
+  ```
 
 ## Detalhes técnicos
 
 - Tailwind v4 já está configurado via `src/styles.css` com `@theme inline` — sem `tailwind.config.js`, como pedido.
 - Os `@import "@fontsource/..."` ficam no topo do `styles.css`, antes de `@theme`.
-- Preload dos woff2: caminho resolvido a partir do pacote `@fontsource` para gerar URL estável no build.
 - Roteamento permanece TanStack Router por arquivo; `/` continua em `src/routes/index.tsx`.
+
 
 ## Verificação ao final
 
