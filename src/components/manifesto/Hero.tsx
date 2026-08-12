@@ -68,7 +68,12 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
           <span className="block">{h1.split(",")[0]},</span>
           <span className="mt-1 block md:mt-2">
             {h1.split(",")[1]?.trim().replace("paralisado no mesmo lugar?", "")}
-            <span className="font-semibold text-brass">paralisado no mesmo lugar?</span>
+            <span
+              className="font-semibold text-brass"
+              style={{ textShadow: "0 0 42px color-mix(in oklab, var(--brass) 45%, transparent)" }}
+            >
+              paralisado no mesmo lugar?
+            </span>
           </span>
         </h1>
 
