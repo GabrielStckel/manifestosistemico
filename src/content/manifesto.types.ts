@@ -136,7 +136,8 @@ export type ManifestoSection =
   | SectionParadigma
   | SectionComunidade
   | SectionColetivo
-  | SectionTrilhas;
+  | SectionTrilhas
+  | SectionOferta;
 
 export type ManifestoContent = {
   meta: Meta;
