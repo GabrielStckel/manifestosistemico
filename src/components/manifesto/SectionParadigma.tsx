@@ -32,10 +32,7 @@ export function SectionParadigma({
         {/* Bloco antigo — única caixa da seção, inerte */}
         <Reveal className="md:col-span-5">
           <div className="rounded-lg border border-white/8 bg-black/40 p-6 text-left sm:p-8">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
-              {antigo.rotulo}
-            </p>
-            <h3 className="mt-3 font-display text-[20px] font-semibold leading-snug text-section-dark-fg/70 sm:text-[22px]">
+            <h3 className="font-display text-[20px] font-semibold leading-snug text-section-dark-fg/70 sm:text-[22px]">
               {antigo.nome}
             </h3>
             <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/50 sm:text-base">
@@ -61,10 +58,7 @@ export function SectionParadigma({
         {/* Bloco novo — aberto */}
         <div className="text-left md:col-span-5">
           <Reveal>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
-              {novo.rotulo}
-            </p>
-            <h3 className="mt-3 font-display text-[20px] font-semibold leading-snug text-section-dark-fg sm:text-[22px]">
+            <h3 className="font-display text-[20px] font-semibold leading-snug text-section-dark-fg sm:text-[22px]">
               {novo.nome}
             </h3>
             <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base">

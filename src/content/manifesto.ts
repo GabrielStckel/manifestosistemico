@@ -2,14 +2,17 @@ import type { ManifestoContent } from "./manifesto.types";
 
 export const manifesto: ManifestoContent = {
   meta: {
-    title: "[DEFINIR]",
-    description: "[DEFINIR]",
-    ogTitle: "[DEFINIR]",
-    ogDescription: "[DEFINIR]",
+    title:
+      "Manifesto Sist\u00eamico \u2014 Atualize os princ\u00edpios que governam suas decis\u00f5es",
+    description:
+      "Comunidade de desenvolvimento pessoal fundamentada em ci\u00eancia, filosofia e vis\u00e3o sist\u00eamica. Trilhas pr\u00e1ticas para romper a paralisia e tomar a sua vida.",
+    ogTitle:
+      "Manifesto Sist\u00eamico \u2014 Atualize os princ\u00edpios que governam suas decis\u00f5es",
+    ogDescription:
+      "Comunidade de desenvolvimento pessoal fundamentada em ci\u00eancia, filosofia e vis\u00e3o sist\u00eamica. Trilhas pr\u00e1ticas para romper a paralisia e tomar a sua vida.",
   },
   topbar: {
     marca: "Manifesto Sistêmico",
-    rotulo: "Comunidade",
   },
   ctaBar: {
     label: "Quero Entrar para o Manifesto Sistêmico",
@@ -84,13 +87,11 @@ export const manifesto: ManifestoContent = {
       fundo: "dark",
       titulo: "O Colapso das Certezas: Do Paradigma Cartesiano ao Sistêmico",
       antigo: {
-        rotulo: "O modo antigo",
         nome: "Paradigma Cartesiano",
         texto:
           "Nós fomos moldados pelo Paradigma Cartesiano, um modo de funcionamento que busca a simplicidade linear (causa e efeito isolados), a estabilidade (a ilusão de controle absoluto sobre o futuro) e a objetividade fria. Mas a vida não funciona em gavetas isoladas. Tentar controlar as pessoas, o dinheiro e o destino sob essa ótica gera exaustão, ansiedade e adoecimento.",
       },
       novo: {
-        rotulo: "A transição",
         nome: "Paradigma Sistêmico",
         transicao:
           "O Manifesto Sistêmico propõe uma transição profunda para o Paradigma Sistêmico, fundamentado na ciência moderna e na percepção, onde o funcionamento compreende:",
@@ -173,7 +174,6 @@ export const manifesto: ManifestoContent = {
       kind: "oferta",
       fundo: "dark",
       titulo: "Tome a sua vida hoje.",
-      rotuloInclui: "O que está incluído",
       inclui: [
         "Acesso Ilimitado por 02 (dois) anos à Comunidade Manifesto Sistêmico (Todas as trilhas no Hotmart Club).",
         "Vivências e Aulas bimestrais ao Vivo de Aprofundamento diretamente com o Jonas Peres e equipe.",
@@ -223,14 +223,6 @@ export const manifesto: ManifestoContent = {
       kind: "rodape",
       fundo: "dark",
       marca: "Manifesto Sist\u00eamico",
-      descricao: "Uma comunidade de evolu\u00e7\u00e3o cont\u00ednua com Jonas Peres.",
-      links: [
-        { label: "Pol\u00edtica de privacidade", href: "__URL_PRIVACIDADE__" },
-        { label: "Termos de uso", href: "__URL_TERMOS__" },
-        { label: "Suporte", href: "__URL_SUPORTE__" },
-      ],
-      aviso:
-        "Este produto n\u00e3o garante a obten\u00e7\u00e3o de resultados. Qualquer refer\u00eancia ao desempenho de uma estrat\u00e9gia n\u00e3o deve ser interpretada como garantia de resultados. O conte\u00fado \u00e9 de natureza educacional e n\u00e3o substitui acompanhamento m\u00e9dico, psicol\u00f3gico ou psiqui\u00e1trico.",
       copyright: "\u00a9 Manifesto Sist\u00eamico. Todos os direitos reservados.",
     },
   ],

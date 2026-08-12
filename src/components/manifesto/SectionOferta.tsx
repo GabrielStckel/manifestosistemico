@@ -7,7 +7,6 @@ import type { SectionOferta as SectionOfertaType } from "../../content/manifesto
 export function SectionOferta({
   fundo,
   titulo,
-  rotuloInclui,
   inclui,
   preco,
   cta,
@@ -35,11 +34,8 @@ export function SectionOferta({
       <Reveal delay={120}>
         <div className="mx-auto mt-12 max-w-2xl overflow-hidden rounded-lg border border-brass/25 bg-surface-dark/70">
           <div className="p-6 text-left sm:p-9">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brass">
-              {rotuloInclui}
-            </p>
 
-            <ul className="mt-6 space-y-4">
+            <ul className="space-y-4">
               {inclui.map((item) => (
                 <li
                   key={item}
