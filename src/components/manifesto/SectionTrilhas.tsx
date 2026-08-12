@@ -81,7 +81,7 @@ export function SectionTrilhas({
                 <h3 className="mt-3 font-display text-[17px] font-semibold leading-snug text-section-dark-fg sm:text-[18px]">
                   {trilha.titulo}
                 </h3>
-                <p className="mt-3 text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-[15px]">
+                <p className="mt-3 text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-justify sm:hyphens-auto sm:text-[15px]">
                   {trilha.texto}
                 </p>
               </div>
