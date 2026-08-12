@@ -169,6 +169,32 @@
     font-family: var(--font-display);
   }
 
+  /* Grão de papel nas seções em pergaminho */
+  [data-section-bg="light"]::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: radial-gradient(
+      circle at 50% 50%,
+      rgba(90, 68, 25, 0.22) 0.5px,
+      transparent 0.6px
+    );
+    background-size: 3px 3px;
+    opacity: 0.5;
+  }
+
+  /* Transição suave no rodapé das seções escuras */
+  [data-section-bg="dark"]::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 120px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, rgba(126, 32, 32, 0.09));
+  }
+
   :focus-visible {
     outline: 2px solid var(--red-accent);
     outline-offset: 2px;
