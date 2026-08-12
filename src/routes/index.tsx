@@ -3,7 +3,7 @@ import { ManifestoPage } from "../components/manifesto/ManifestoPage";
 import { manifesto } from "../content/manifesto";
 import type { ManifestoSection } from "../content/manifesto.types";
 
-const faqSection = manifesto.find(
+const faqSection = manifesto.sections.find(
   (s): s is Extract<ManifestoSection, { kind: "faq" }> => s.kind === "faq",
 );
 
