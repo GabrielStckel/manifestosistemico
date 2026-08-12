@@ -14,9 +14,11 @@ export function ManifestoPage({ content }: { content: ManifestoContent }) {
         switch (s.kind) {
           case "mentiras":
             return <SectionMentiras key={key} {...s} />;
+          default: {
+            const exhaustive: never = s;
+            return exhaustive;
+          }
         }
-        const exhaustive: never = s;
-        return exhaustive;
       })}
     </main>
   );
