@@ -119,14 +119,19 @@ export function SectionOferta({
 
                   <a
                     href={CHECKOUT_URL}
-                    className="group mt-8 flex min-h-[60px] w-full items-center justify-center gap-2 rounded-cta bg-red-primary px-5 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.05em] text-on-red shadow-[0_20px_55px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_26px_70px_-16px_var(--red-accent)] active:scale-[0.99] sm:text-[15px] md:text-[16px]"
+                    className="group relative mt-8 flex min-h-[60px] w-full items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/15 bg-gradient-to-b from-red-primary to-red-primary-hover px-5 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.05em] text-on-red shadow-[0_0_32px_rgba(211,58,52,0.28),0_20px_55px_-18px_var(--red-accent)] transition-all hover:shadow-[0_0_48px_rgba(211,58,52,0.42),0_26px_70px_-16px_var(--red-accent)] hover:brightness-110 active:scale-[0.98] sm:text-[15px] md:text-[16px]"
                   >
-                    {cta}
+                    <span
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full transition-transform duration-700 ease-in-out group-hover:translate-x-full"
+                    />
+                    <span className="relative z-10">{cta}</span>
                     <ArrowRight
                       aria-hidden
-                      className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
+                      className="relative z-10 h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
                     />
                   </a>
+
 
                   <p className="mt-4 flex items-center justify-center gap-1.5 text-[12px] text-muted-foreground md:text-[13px]">
                     <Lock aria-hidden className="h-3.5 w-3.5 text-brass/80" />

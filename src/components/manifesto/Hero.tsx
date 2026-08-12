@@ -86,18 +86,19 @@ export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType)
 
         <a
           href="#oferta"
-          className="group relative mt-9 flex min-h-[60px] w-full max-w-[440px] items-center justify-center gap-2 overflow-hidden rounded-cta bg-red-primary px-6 text-center text-[14.5px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_22px_60px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_28px_75px_-16px_var(--red-accent)] active:scale-[0.99] md:mt-11 md:text-[17px]"
+          className="group relative mt-9 flex min-h-[60px] w-full max-w-[440px] items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/15 bg-gradient-to-b from-red-primary to-red-primary-hover px-6 text-center text-[14.5px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_0_32px_rgba(211,58,52,0.32),0_22px_60px_-18px_var(--red-accent)] transition-all hover:shadow-[0_0_48px_rgba(211,58,52,0.48),0_28px_75px_-16px_var(--red-accent)] hover:brightness-110 active:scale-[0.98] md:mt-11 md:text-[17px]"
         >
           <span
             aria-hidden="true"
-            className="pointer-events-none absolute inset-y-0 -left-full w-1/2 skew-x-[-20deg] bg-white/20 transition-all duration-700 group-hover:left-[140%]"
+            className="pointer-events-none absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full transition-transform duration-700 ease-in-out group-hover:translate-x-full"
           />
-          {cta}
+          <span className="relative z-10">{cta}</span>
           <ArrowRight
             aria-hidden="true"
-            className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
+            className="relative z-10 h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1"
           />
         </a>
+
 
         <p className="mt-4 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:max-w-none md:text-[14px]">
           {microtexto}
