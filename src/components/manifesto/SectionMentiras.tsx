@@ -30,7 +30,7 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
                 {item.rotulo}
               </p>
 
-              <p className="relative z-10 mt-4 font-display text-[clamp(1.15rem,4.6vw,1.5rem)] italic leading-snug text-muted-foreground">
+              <p className="relative z-10 mt-4 font-display text-[clamp(1.05rem,1.5vw,1.12rem)] italic leading-snug text-muted-foreground lg:whitespace-nowrap">
                 {"\u201C"}
                 {item.mentira}
                 {"\u201D"}
