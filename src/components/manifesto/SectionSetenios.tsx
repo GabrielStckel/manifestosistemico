@@ -30,7 +30,7 @@ export function SectionSetenios({
             <p className="text-[10.5px] font-semibold uppercase tracking-[0.26em] text-brass md:text-[12px]">
               Os três primeiros setênios
             </p>
-            <h2 className="mx-auto max-w-[20ch] text-balance text-center font-display font-semibold leading-[1.3] tracking-[-0.01em] text-section-dark-fg text-[clamp(1.1rem,4.8vw,1.6rem)] sm:max-w-[22ch] sm:text-[clamp(1.25rem,5.2vw,1.8rem)] md:mt-5 md:max-w-3xl md:text-pretty md:text-[clamp(1.8rem,3.4vw,2.5rem)] md:leading-[1.12]">
+            <h2 className="mx-auto max-w-[20ch] text-balance text-center font-display font-semibold leading-[1.3] tracking-[-0.01em] text-section-dark-fg text-[clamp(1.1rem,4.8vw,1.6rem)] sm:max-w-[22ch] sm:text-[clamp(1.25rem,5.2vw,1.8rem)] md:mt-5 md:max-w-3xl md:text-pretty md:text-[clamp(1.5rem,2.8vw,2.1rem)] md:leading-[1.12]">
               {titulo}
             </h2>
             <div aria-hidden className="mt-7 flex items-center justify-center gap-3">
