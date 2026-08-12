@@ -61,6 +61,8 @@
   /* Acento próprio do Manifesto */
   --color-brass: var(--brass);
   --color-brass-muted: var(--brass-muted);
+  --color-brass-ink: var(--brass-ink);
+  --color-red-ink: var(--red-ink);
   --color-parchment: var(--parchment);
   --color-on-parchment: var(--on-parchment);
 }
