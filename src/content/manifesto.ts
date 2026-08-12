@@ -95,5 +95,45 @@ export const manifesto: ManifestoContent = {
         },
       ],
     },
+
+    {
+      kind: "paradigma",
+      fundo: "dark",
+      titulo: "O Colapso das Certezas: Do Paradigma Cartesiano ao Sistêmico",
+      antigo: {
+        rotulo: "O modo antigo",
+        nome: "Paradigma Cartesiano",
+        texto:
+          "Nós fomos moldados pelo Paradigma Cartesiano, um modo de funcionamento que busca a simplicidade linear (causa e efeito isolados), a estabilidade (a ilusão de controle absoluto sobre o futuro) e a objetividade fria. Mas a vida não funciona em gavetas isoladas. Tentar controlar as pessoas, o dinheiro e o destino sob essa ótica gera exaustão, ansiedade e adoecimento.",
+      },
+      novo: {
+        rotulo: "A transição",
+        nome: "Paradigma Sistêmico",
+        transicao:
+          "O Manifesto Sistêmico propõe uma transição profunda para o Paradigma Sistêmico, fundamentado na ciência moderna e na percepção, onde o funcionamento compreende:",
+        itens: [
+          {
+            titulo: "Complexidade (Causalidade Circular)",
+            texto:
+              "Suas travas financeiras, profissionais ou afetivas não são isoladas; elas fazem parte de um ecossistema de informações herdadas e dinâmicas familiares profundas.",
+          },
+          {
+            titulo: "Instabilidade (O Fluxo da Vida)",
+            texto:
+              "Abandonar a ilusão do controle obsessivo e aprender a navegar na imprevisibilidade com força, presença e maturidade emocional.",
+          },
+          {
+            titulo: "Subjetividade (O Observador e a Realidade)",
+            texto:
+              "Como demonstrado na física moderna, a consciência do observador interfere na realidade. Você manifesta no mundo externo exatamente as informações que carrega no seu mundo interno.",
+          },
+          {
+            titulo: "As Conexões Primordiais",
+            texto:
+              "No nível inconsciente, \u201CPai é o mundo, Mãe é a vida\u201D. Quando você pacifica e toma a força dos seus pais, você aprende a relaxar, confiar e tomar a sua própria vida.",
+          },
+        ],
+      },
+    },
   ],
 };

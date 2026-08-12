@@ -58,7 +58,27 @@ export type SectionSetenios = {
   elos: { titulo: string; texto: string }[];
 };
 
-export type ManifestoSection = SectionMentiras | SectionSetenios;
+export type SectionParadigma = {
+  kind: "paradigma";
+  fundo: Fundo;
+  titulo: string;
+  antigo: {
+    rotulo: string;
+    nome: string;
+    texto: string;
+  };
+  novo: {
+    rotulo: string;
+    nome: string;
+    transicao: string;
+    itens: { titulo: string; texto: string }[];
+  };
+};
+
+export type ManifestoSection =
+  | SectionMentiras
+  | SectionSetenios
+  | SectionParadigma;
 
 export type ManifestoContent = {
   meta: Meta;
