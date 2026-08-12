@@ -95,7 +95,7 @@ export function Hero({
           {microtexto}
         </p>
 
-        <div className="mx-auto mt-8 grid max-w-[360px] grid-cols-2 gap-x-4 gap-y-3.5 border-t border-white/10 pt-6 sm:flex sm:max-w-none sm:flex-wrap sm:justify-center sm:gap-x-7 sm:border-t-0 sm:pt-0 md:mt-12 md:gap-x-9 md:border-t md:border-white/8 md:pt-7">
+        <div className="mx-auto mt-8 grid max-w-[360px] grid-cols-2 gap-x-4 gap-y-3.5 border-t border-white/10 pt-6 sm:flex sm:max-w-none sm:flex-wrap sm:justify-center sm:gap-x-7 sm:border-t-0 sm:pt-0 md:mt-12 md:gap-x-8 md:border-t md:border-white/10 md:pt-7 md:text-[12.5px]">
           {pilulas.map((p) => {
             const Icon = ICONS[p.icon];
             return (
