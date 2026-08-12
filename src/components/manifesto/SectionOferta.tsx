@@ -54,7 +54,7 @@ export function SectionOferta({
               </p>
             ) : null}
 
-            <p className="mt-3 font-display font-semibold leading-none text-section-dark-fg text-[clamp(2rem,9vw,2.75rem)]">
+            <p className="mt-3 break-words font-display font-semibold leading-none text-section-dark-fg text-[clamp(2rem,9vw,2.75rem)]">
               {preco.parcelado}
             </p>
 
