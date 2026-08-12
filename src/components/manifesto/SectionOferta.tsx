@@ -165,13 +165,13 @@ export function SectionOferta({
                   <span className="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">
                     Pagamento processado por
                   </span>
-                  <span className="rounded-pill border border-brass/35 bg-brass/10 px-3 py-1 font-display text-[13px] font-semibold tracking-wide text-brass">
+                  <span className="rounded-full border border-brass/35 bg-brass/10 px-3 py-1 font-display text-[13px] font-semibold tracking-wide text-brass">
                     Hotmart
                   </span>
                   {["Cartão", "Pix", "Boleto"].map((m) => (
                     <span
                       key={m}
-                      className="rounded-pill border border-white/12 bg-white/5 px-3 py-1 text-[11.5px] font-medium text-section-dark-fg/75"
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11.5px] font-medium text-section-dark-fg/75"
                     >
                       {m}
                     </span>
