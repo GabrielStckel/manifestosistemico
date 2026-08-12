@@ -10,23 +10,23 @@ export function SectionSetenios({
 }: SectionSeteniosType) {
   return (
     <SectionShell fundo={fundo} className="py-14">
-      <div className="grid gap-10 md:grid-cols-12 md:gap-12">
-        <div className="md:col-span-5 md:sticky md:top-24 md:self-start">
+      <div>
+        <div className="mx-auto max-w-3xl text-center">
           <Reveal>
             <h2 className="text-balance font-display font-semibold leading-[1.12] text-section-light-fg text-[clamp(1.6rem,6.8vw,2.35rem)] md:text-[clamp(1.7rem,3.1vw,2.4rem)]">
               {titulo}
             </h2>
-            <div aria-hidden className="mt-6 h-px w-12 bg-brass/60" />
+            <div aria-hidden className="mx-auto mt-6 h-px w-12 bg-brass/60" />
           </Reveal>
 
           <Reveal delay={120}>
-            <p className="mt-6 max-w-[46ch] text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base">
+            <p className="mx-auto mt-6 max-w-[58ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base">
               {abertura}
             </p>
           </Reveal>
         </div>
 
-        <ol className="relative md:col-span-7">
+        <ol className="relative mx-auto mt-14 max-w-2xl">
           {elos.map((elo, i) => (
             <Reveal
               as="li"
@@ -52,7 +52,7 @@ export function SectionSetenios({
               <h3 className="font-display text-[17px] font-semibold leading-snug text-section-light-fg sm:text-[19px]">
                 {elo.titulo}
               </h3>
-              <p className="mt-2.5 max-w-[62ch] text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base">
+              <p className="mt-2.5 max-w-[62ch] text-justify hyphens-auto text-[15px] leading-relaxed text-section-light-fg/80 sm:text-base">
                 {elo.texto}
               </p>
             </Reveal>

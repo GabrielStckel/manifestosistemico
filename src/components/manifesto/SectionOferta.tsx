@@ -35,7 +35,7 @@ export function SectionOferta({
                   className="flex gap-3.5 text-[15px] leading-relaxed text-section-dark-fg/85 sm:text-base"
                 >
                   <Check aria-hidden className="mt-1 h-4 w-4 shrink-0 text-brass" />
-                  <span>{item}</span>
+                  <span className="text-justify hyphens-auto">{item}</span>
                 </li>
               ))}
             </ul>
@@ -78,7 +78,7 @@ export function SectionOferta({
             <p className="font-display text-[16px] font-semibold text-section-dark-fg">
               {garantia.rotulo}
             </p>
-            <p className="mt-2 text-[14.5px] leading-relaxed text-section-dark-fg/75">
+            <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75">
               {garantia.texto}
             </p>
           </div>
