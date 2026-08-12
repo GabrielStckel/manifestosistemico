@@ -186,5 +186,29 @@ export const manifesto: ManifestoContent = {
       texto:
         "No esforço inconsciente de pertencer ao nosso sistema familiar e ao meio em que vivemos, nós tendemos a repetir os mesmos comportamentos doentios para não nos sentirmos excluídos. Romper com o paradigma antigo gera um medo profundo de solidão. É por isso que o Manifesto é um movimento coletivo. Ao se unir a centenas de pessoas que buscam a mesma transição de consciência, nós alimentamos um campo mórfico de mudança.",
     },
+    {
+      kind: "oferta",
+      fundo: "dark",
+      titulo: "Tome a sua vida hoje.",
+      rotuloInclui: "O que está incluído",
+      inclui: [
+        "Acesso Ilimitado por 02 (dois) anos à Comunidade Manifesto Sistêmico (Todas as trilhas no Hotmart Club).",
+        "Vivências e Aulas bimestrais ao Vivo de Aprofundamento diretamente com o Jonas Peres e equipe.",
+        "Comunidade Ativa de Membros (O campo mórfico de apoio mútuo).",
+        "Materiais de Apoio e Exercícios Práticos para aplicação diária.",
+      ],
+      preco: {
+        rotulo: "Condição de lançamento",
+        parcelado: "12x de R$ __VALOR_PARCELA__",
+        aVista: "ou R$ __VALOR_A_VISTA__ à vista",
+      },
+      cta: "Quero assinar o Manifesto e tomar minha vida",
+      garantia: {
+        rotulo: "Garantia incondicional de 7 dias",
+        texto:
+          "Experimente a plataforma, assista às trilhas e participe da comunidade. Se em até 7 dias você sentir que a profundidade do Manifesto não é para você, basta solicitar o reembolso e devolveremos 100% do seu investimento.",
+      },
+    },
   ],
 };
+

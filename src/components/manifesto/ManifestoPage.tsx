@@ -6,6 +6,7 @@ import { SectionParadigma } from "./SectionParadigma";
 import { SectionComunidade } from "./SectionComunidade";
 import { SectionColetivo } from "./SectionColetivo";
 import { SectionTrilhas } from "./SectionTrilhas";
+import { SectionOferta } from "./SectionOferta";
 import type {
   ManifestoContent,
   ManifestoSection,
@@ -13,7 +14,7 @@ import type {
 
 // Exaustividade em tempo de compilação: adicionar um novo `kind` à união
 // sem tratar aqui quebra o build.
-type KindsTratados = "mentiras" | "setenios" | "paradigma" | "comunidade" | "coletivo" | "trilhas";
+type KindsTratados = "mentiras" | "setenios" | "paradigma" | "comunidade" | "coletivo" | "trilhas" | "oferta";
 type _Exaustivo = Exclude<ManifestoSection["kind"], KindsTratados> extends never
   ? true
   : ["kind sem case em ManifestoPage", Exclude<ManifestoSection["kind"], KindsTratados>];
@@ -41,6 +42,8 @@ export function ManifestoPage({ content }: { content: ManifestoContent }) {
             return <SectionColetivo key={key} {...s} />;
           case "trilhas":
             return <SectionTrilhas key={key} {...s} />;
+          case "oferta":
+            return <SectionOferta key={key} {...s} />;
         }
       })}
     </main>
