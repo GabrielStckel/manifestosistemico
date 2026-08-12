@@ -27,7 +27,7 @@ export function SectionParadigma({
             <h3 className="mt-3 font-display text-[20px] font-semibold leading-snug text-section-dark-fg/70 sm:text-[22px]">
               {antigo.nome}
             </h3>
-            <p className="mt-5 text-[15px] leading-relaxed text-section-dark-fg/50 sm:text-base">
+            <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/50 sm:text-base">
               {antigo.texto}
             </p>
           </div>
@@ -56,7 +56,7 @@ export function SectionParadigma({
             <h3 className="mt-3 font-display text-[20px] font-semibold leading-snug text-section-dark-fg sm:text-[22px]">
               {novo.nome}
             </h3>
-            <p className="mt-5 text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base">
+            <p className="mt-5 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/80 sm:text-base">
               {novo.transicao}
             </p>
           </Reveal>
@@ -72,7 +72,7 @@ export function SectionParadigma({
                 <h4 className="font-display text-[16px] font-semibold leading-snug text-section-dark-fg sm:text-[17px]">
                   {item.titulo}
                 </h4>
-                <p className="mt-2 text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-[15px]">
+                <p className="mt-2 text-justify hyphens-auto text-[14.5px] leading-relaxed text-section-dark-fg/75 sm:text-[15px]">
                   {item.texto}
                 </p>
               </Reveal>

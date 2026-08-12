@@ -31,7 +31,7 @@ export function SectionMentiras({ fundo, titulo, itens }: SectionMentirasType) {
                 {item.rotuloVerdade}
               </p>
 
-              <p className="relative z-10 mt-3 text-[15px] leading-relaxed text-section-dark-fg/90 sm:text-base">
+              <p className="relative z-10 mt-3 text-justify hyphens-auto text-[15px] leading-relaxed text-section-dark-fg/90 sm:text-base">
                 {item.verdade}
               </p>
 

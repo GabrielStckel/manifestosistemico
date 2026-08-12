@@ -19,7 +19,7 @@ export function SectionComunidade({
         </Reveal>
 
         <Reveal delay={120}>
-          <p className="mx-auto mt-8 max-w-[58ch] text-[16.5px] leading-[1.75] text-section-light-fg/85 sm:text-[18px] sm:leading-[1.8]">
+          <p className="mx-auto mt-8 max-w-[58ch] text-justify hyphens-auto text-[16.5px] leading-[1.75] text-section-light-fg/85 sm:text-[18px] sm:leading-[1.8]">
             {texto}
           </p>
         </Reveal>
