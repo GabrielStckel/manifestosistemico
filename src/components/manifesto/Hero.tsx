@@ -3,9 +3,9 @@ import { CampoConstelacao } from "./CampoConstelacao";
 import { Orbe } from "./Orbe";
 import type { Hero as HeroType } from "../../content/manifesto.types";
 
-export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
+export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType) {
   return (
-    <section className="relative flex min-h-[94svh] items-center overflow-hidden bg-section-dark-bg px-5 pb-12 pt-24 text-section-dark-fg sm:px-8 md:min-h-[88vh] md:pb-24 md:pt-28">
+    <section className="relative flex min-h-[94svh] items-center overflow-hidden bg-section-dark-bg px-5 pb-14 pt-24 text-section-dark-fg sm:px-8 md:min-h-[92vh] md:pb-24 md:pt-28">
       {/* Camadas de fundo — todas decorativas */}
       <div
         aria-hidden="true"
@@ -24,8 +24,18 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(62% 52% at 50% 44%, var(--red-accent) 0%, transparent 66%), radial-gradient(42% 34% at 50% 40%, var(--red-deep) 0%, transparent 70%)",
-          opacity: 0.24,
+            "radial-gradient(62% 52% at 50% 42%, var(--red-accent) 0%, transparent 66%), radial-gradient(42% 34% at 50% 38%, var(--red-deep) 0%, transparent 70%)",
+          opacity: 0.26,
+        }}
+      />
+      {/* Luz rasante superior em latão */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[45%]"
+        style={{
+          background:
+            "radial-gradient(70% 100% at 50% 0%, var(--brass) 0%, transparent 70%)",
+          opacity: 0.07,
         }}
       />
       <div
@@ -33,38 +43,61 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(100% 80% at 50% 45%, transparent 48%, rgba(0,0,0,0.6) 100%)",
+            "radial-gradient(100% 80% at 50% 45%, transparent 46%, rgba(0,0,0,0.68) 100%)",
         }}
+      />
+      {/* Linha de horizonte na base */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-brass/25 to-transparent"
       />
 
       <div className="relative z-10 mx-auto flex w-full max-w-3xl flex-col items-center text-center md:max-w-4xl">
-        <p className="text-[9.5px] font-semibold uppercase leading-[1.8] tracking-[0.22em] text-brass/85 sm:text-[11px] sm:tracking-[0.28em]">
+        <p className="inline-flex items-center gap-2.5 rounded-full border border-brass/25 bg-white/[0.04] px-4 py-2 text-[9.5px] font-semibold uppercase leading-[1.6] tracking-[0.2em] text-brass/90 backdrop-blur-[2px] sm:text-[10.5px] sm:tracking-[0.26em]">
+          <span
+            aria-hidden="true"
+            className="h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"
+          />
           {badge}
         </p>
 
-        <div
-          aria-hidden="true"
-          className="mt-4 h-px w-8 bg-gradient-to-r from-transparent via-brass/60 to-transparent md:mt-7 md:w-14"
-        />
-
         <h1
-          className="mt-5 whitespace-pre-line text-balance font-display text-[clamp(1.85rem,7.3vw,2.5rem)] font-semibold leading-[1.1] tracking-[-0.01em] md:mt-7 md:text-[clamp(2.4rem,4.6vw,3.6rem)] md:leading-[1.06] md:tracking-[-0.015em]"
+          className="mt-7 whitespace-pre-line text-balance font-display text-[clamp(1.95rem,7.6vw,2.6rem)] font-semibold leading-[1.08] tracking-[-0.015em] md:mt-9 md:max-w-[19ch] md:text-[clamp(2.5rem,4.6vw,3.5rem)] md:leading-[1.04] md:tracking-[-0.02em]"
           style={{ textShadow: "var(--text-shadow-hero)" }}
         >
           {h1}
         </h1>
 
+        <div
+          aria-hidden="true"
+          className="mt-7 flex items-center justify-center gap-3 md:mt-9"
+        >
+          <span className="h-px w-10 bg-gradient-to-r from-transparent to-brass/55 md:w-16" />
+          <span className="h-1 w-1 rotate-45 bg-brass/80" />
+          <span className="h-px w-10 bg-gradient-to-l from-transparent to-brass/55 md:w-16" />
+        </div>
+
         <p
-          className="mt-5 max-w-[46ch] text-[15px] leading-[1.6] text-section-dark-fg/85 md:mt-7 md:max-w-[62ch] md:text-[18.5px] md:leading-[1.75]"
+          className="mt-6 max-w-[44ch] text-[15.5px] leading-[1.65] text-section-dark-fg/90 md:mt-7 md:max-w-[58ch] md:text-[20px] md:leading-[1.65]"
           style={{ textShadow: "var(--text-shadow-soft)" }}
         >
           {subtitulo}
         </p>
 
+        {apoio ? (
+          <p className="mt-4 max-w-[40ch] text-[13.5px] leading-[1.6] text-section-dark-fg/60 md:max-w-[62ch] md:text-[16px] md:leading-[1.7]">
+            {apoio}
+          </p>
+        ) : null}
+
         <a
           href="#oferta"
-          className="group mt-8 flex min-h-[58px] w-full max-w-[420px] items-center justify-center gap-2 rounded-cta bg-red-primary px-6 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_18px_50px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_22px_60px_-16px_var(--red-accent)] active:scale-[0.99] md:mt-11 md:text-[16px]"
+          className="group relative mt-9 flex min-h-[60px] w-full max-w-[440px] items-center justify-center gap-2 overflow-hidden rounded-cta bg-red-primary px-6 text-center text-[14.5px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_22px_60px_-18px_var(--red-accent)] transition-all hover:bg-red-primary-hover hover:shadow-[0_28px_75px_-16px_var(--red-accent)] active:scale-[0.99] md:mt-11 md:text-[17px]"
         >
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-y-0 -left-full w-1/2 skew-x-[-20deg] bg-white/20 transition-all duration-700 group-hover:left-[140%]"
+          />
           {cta}
           <ArrowRight
             aria-hidden="true"
@@ -72,11 +105,11 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           />
         </a>
 
-        <p className="mt-3.5 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:mt-4 md:max-w-none md:text-[14px]">
+        <p className="mt-4 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:max-w-none md:text-[14px]">
           {microtexto}
         </p>
-
       </div>
     </section>
   );
 }
+
