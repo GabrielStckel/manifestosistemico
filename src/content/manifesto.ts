@@ -37,14 +37,14 @@ export const manifesto: ManifestoContent = {
         "As duas grandes mentiras que contaram sobre o seu desenvolvimento pessoal:",
       itens: [
         {
-          rotulo: "Mentira 01",
+          rotulo: "Mentira #1",
           mentira: "O tempo cura todas as feridas",
           rotuloVerdade: "A verdade",
           verdade:
             "O tempo não cura nada. Quando você tenta ignorar uma dor ou conflito, seu inconsciente funciona como uma lixeira mental. Ele armazena essa informação e continua operando silenciosamente 24 horas por dia, ativando mecanismos invisíveis de evitação e autossabotagem ao menor sinal de risco.",
         },
         {
-          rotulo: "Mentira 02",
+          rotulo: "Mentira #2",
           mentira: "Você só precisa ressignificar o seu passado",
           rotuloVerdade: "A verdade",
           verdade:
@@ -129,33 +129,33 @@ export const manifesto: ManifestoContent = {
     {
       kind: "trilhas",
       fundo: "dark",
-      titulo: "As temporadas da sua transforma\u00E7\u00E3o.",
-      subtitulo: "A jornada come\u00E7a pelo essencial:",
+      titulo:
+        "As temporadas da sua transforma\u00E7\u00E3o. A jornada come\u00E7a pelo essencial:",
       trilhas: [
         {
           numero: "01",
-          rotulo: "Temporada 01",
+          rotulo: "Trilha 01",
           titulo: "A Introdu\u00E7\u00E3o: A arquitetura da consci\u00EAncia sist\u00EAmica",
           texto:
             "O in\u00EDcio do movimento de consci\u00EAncia que leva \u00E0 leveza e \u00E0 compreens\u00E3o da vida.",
         },
         {
           numero: "02",
-          rotulo: "Temporada 02",
-          titulo: "As tr\u00EAs motiva\u00E7\u00F5es humanas",
+          rotulo: "Trilha 02",
+          titulo: "As tr\u00EAs motiva\u00E7\u00F5es humanas: O resgate da for\u00E7a.",
           texto:
-            "O resgate da for\u00E7a. Investigue as motiva\u00E7\u00F5es inconscientes gravadas dos 0 aos 21 anos. Desarme o medo de sofrer e o medo de mudar, pacificando sua rela\u00E7\u00E3o com sua origem.",
+            "Investigue as motiva\u00E7\u00F5es inconscientes gravadas dos 0 aos 21 anos. Desarme o medo de sofrer e o medo de mudar, pacificando sua rela\u00E7\u00E3o com sua origem.",
         },
         {
           numero: "03",
-          rotulo: "Temporada 03",
+          rotulo: "Trilha 03",
           titulo: "O Despertar do Paradigma (Ci\u00EAncia e Filosofia)",
           texto:
             "A base epistemol\u00F3gica. Compreenda as implica\u00E7\u00F5es filos\u00F3ficas da f\u00EDsica moderna (teoria da relatividade, mec\u00E2nica qu\u00E2ntica) e como sua consci\u00EAncia colapsa a realidade di\u00E1ria.",
         },
         {
           numero: "04",
-          rotulo: "Temporada 04",
+          rotulo: "Trilha 04",
           titulo: "A Individua\u00E7\u00E3o",
           texto:
             "O caminho para sair da infantiliza\u00E7\u00E3o. Abandone a postura de \"pequeno\" e a terceiriza\u00E7\u00E3o de responsabilidades. Desenvolva a maturidade emocional para assumir o protagonismo e tomar sua vida com amor por voc\u00EA.",
@@ -181,13 +181,13 @@ export const manifesto: ManifestoContent = {
         "Materiais de Apoio e Exercícios Práticos para aplicação diária.",
       ],
       preco: {
-        rotulo: "Condição de lançamento",
+        rotulo: "Preço Especial de Lançamento:",
         parcelado: "12x de R$ 103,11",
-        aVista: "ou R$ 997,00 à vista",
+        aVista: "ou R$ 997,00 à vista no plano anual",
       },
-      cta: "Quero tomar minha vida",
+      cta: "Quero Assinar o Manifesto e Tomar Minha Vida",
       garantia: {
-        rotulo: "Garantia incondicional de 7 dias",
+        rotulo: "Garantia Incondicional de 7 dias",
         texto:
           "Experimente a plataforma, assista às trilhas e participe da comunidade. Se em até 7 dias você sentir que a profundidade do Manifesto não é para você, basta solicitar o reembolso e devolveremos 100% do seu investimento.",
       },

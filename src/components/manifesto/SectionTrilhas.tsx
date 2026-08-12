@@ -46,21 +46,13 @@ function Capa({ trilha }: { trilha: Trilha }) {
   );
 }
 
-export function SectionTrilhas({
-  fundo,
-  titulo,
-  subtitulo,
-  trilhas,
-}: SectionTrilhasType) {
+export function SectionTrilhas({ fundo, titulo, trilhas }: SectionTrilhasType) {
   return (
     <SectionShell fundo={fundo} className="py-14">
       <Reveal>
         <h2 className="mx-auto max-w-3xl text-balance text-center font-display font-semibold leading-[1.12] text-[clamp(1.6rem,6.8vw,2.3rem)] md:text-[clamp(1.75rem,3.2vw,2.5rem)]">
           {titulo}
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-[15px] leading-relaxed text-section-dark-fg/70 sm:text-base">
-          {subtitulo}
-        </p>
       </Reveal>
 
       <ul className="mt-9 grid items-stretch gap-6 sm:grid-cols-2 md:mt-14 md:gap-7">
