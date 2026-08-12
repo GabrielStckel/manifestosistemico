@@ -3,7 +3,7 @@ import { CampoConstelacao } from "./CampoConstelacao";
 import { Orbe } from "./Orbe";
 import type { Hero as HeroType } from "../../content/manifesto.types";
 
-export function Hero({ badge, h1, subtitulo, apoio, cta, microtexto }: HeroType) {
+export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
   return (
     <section className="relative flex min-h-[94svh] items-center overflow-hidden bg-section-dark-bg px-5 pb-14 pt-24 text-section-dark-fg sm:px-8 md:min-h-[92vh] md:pb-24 md:pt-28">
       {/* Camadas de fundo — todas decorativas */}
