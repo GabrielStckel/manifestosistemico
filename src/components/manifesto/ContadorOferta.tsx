@@ -29,7 +29,7 @@ function calcular(agora: number): Estado {
     minutos: Math.floor((seg % 3600) / 60),
     segundos: seg % 60,
     expirado: restante <= 0,
-    progresso: Math.round(progresso),
+    progresso: Number(progresso.toFixed(2)),
   };
 }
 
@@ -108,11 +108,11 @@ export function ContadorOferta({
       <div className="mt-5">
         <div className="flex items-baseline justify-between text-[11.5px] text-muted-foreground md:text-[12.5px]">
           <span>
-            <span className="font-semibold text-brass tabular-nums">{progresso}%</span>{" "}
+            <span className="font-semibold text-brass tabular-nums">{progresso.toFixed(2)}%</span>{" "}
             das vagas preenchidas
           </span>
           <span className="text-[10.5px] uppercase tracking-[0.14em]">
-            Turma atual
+            Vagas limitadas
           </span>
         </div>
         <div
