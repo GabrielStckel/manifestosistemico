@@ -1,4 +1,3 @@
-import { Topbar } from "./Topbar";
 import { Hero } from "./Hero";
 import { SectionMentiras } from "./SectionMentiras";
 import { SectionSetenios } from "./SectionSetenios";
@@ -27,7 +26,6 @@ void _exaustivo;
 export function ManifestoPage({ content }: { content: ManifestoContent }) {
   return (
     <main className="relative">
-      <Topbar {...content.topbar} />
       <Hero {...content.hero} />
 
       {content.sections.map((s, i) => {
