@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { SectionShell } from "./SectionShell";
 import { Reveal } from "./Reveal";
+import { ContadorOferta } from "./ContadorOferta";
 import { CHECKOUT_URL } from "../../lib/config";
 import { handleCheckoutClick } from "../../lib/analytics";
 import type { SectionOferta as SectionOfertaType } from "../../content/manifesto.types";
@@ -117,6 +118,10 @@ export function SectionOferta({
                       {preco.nota}
                     </p>
                   ) : null}
+
+                  <div className="mt-7">
+                    <ContadorOferta variante="completo" />
+                  </div>
 
                   <a
                     href={CHECKOUT_URL}
