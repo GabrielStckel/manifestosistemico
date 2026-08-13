@@ -9,6 +9,7 @@ import {
 import { SectionShell } from "./SectionShell";
 import { Reveal } from "./Reveal";
 import { CHECKOUT_URL } from "../../lib/config";
+import { handleCheckoutClick } from "../../lib/analytics";
 import type { SectionOferta as SectionOfertaType } from "../../content/manifesto.types";
 
 const SELOS = [
