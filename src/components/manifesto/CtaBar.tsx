@@ -1,5 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { CHECKOUT_URL } from "../../lib/config";
+import { handleCheckoutClick } from "../../lib/analytics";
+
+
 
 
 export function CtaBar({ label }: { label: string }) {
