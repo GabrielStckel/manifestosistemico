@@ -78,8 +78,12 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           <span className="h-px w-10 bg-gradient-to-l from-transparent to-brass/55 md:w-16" />
         </div>
 
+        <div className="mt-8 w-full max-w-[420px] md:mt-10">
+          <ContadorOferta variante="compacto" />
+        </div>
+
         <p
-          className="mt-14 max-w-[44ch] text-[15.5px] leading-[1.65] text-section-dark-fg/90 md:mt-22 md:max-w-[58ch] md:whitespace-pre-line md:text-[18px] md:leading-[1.65]"
+          className="mt-8 max-w-[44ch] text-[15.5px] leading-[1.65] text-section-dark-fg/90 md:mt-10 md:max-w-[58ch] md:whitespace-pre-line md:text-[18px] md:leading-[1.65]"
           style={{ textShadow: "var(--text-shadow-soft)" }}
         >
           {subtitulo}
@@ -87,7 +91,7 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
 
         <a
           href="#oferta"
-          className="group relative mt-14 flex min-h-[60px] w-full max-w-[440px] items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/15 bg-gradient-to-b from-red-primary to-red-primary-hover px-6 text-center text-[14.5px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_0_32px_rgba(211,58,52,0.32),0_22px_60px_-18px_var(--red-accent)] transition-all hover:shadow-[0_0_48px_rgba(211,58,52,0.48),0_28px_75px_-16px_var(--red-accent)] hover:brightness-110 active:scale-[0.98] md:mt-18 md:text-[16px]"
+          className="group relative mt-8 flex min-h-[60px] w-full max-w-[440px] items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/15 bg-gradient-to-b from-red-primary to-red-primary-hover px-6 text-center text-[14.5px] font-bold uppercase leading-snug tracking-[0.06em] text-on-red shadow-[0_0_32px_rgba(211,58,52,0.32),0_22px_60px_-18px_var(--red-accent)] transition-all hover:shadow-[0_0_48px_rgba(211,58,52,0.48),0_28px_75px_-16px_var(--red-accent)] hover:brightness-110 active:scale-[0.98] md:mt-10 md:text-[16px]"
         >
           <span
             aria-hidden="true"
@@ -100,14 +104,9 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           />
         </a>
 
-        <p className="mt-5 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:mt-7 md:max-w-none md:text-[13px]">
+        <p className="mt-4 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:mt-5 md:max-w-none md:text-[13px]">
           {microtexto}
         </p>
-
-        <div className="mt-8 w-full max-w-[440px] md:mt-10">
-          <ContadorOferta variante="compacto" />
-        </div>
-
       </div>
     </section>
   );
