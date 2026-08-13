@@ -26,7 +26,6 @@ void _exaustivo;
 export function ManifestoPage({ content }: { content: ManifestoContent }) {
   return (
     <main className="relative">
-      <Topbar {...content.topbar} />
       <Hero {...content.hero} />
 
       {content.sections.map((s, i) => {
