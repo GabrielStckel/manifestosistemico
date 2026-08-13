@@ -62,9 +62,9 @@ export const Route = createFileRoute("/api/public/track-checkout-click")({
         const { error } = await supabaseAdmin.from("checkout_clicks").insert({
           source: parsed.data.source,
           url: parsed.data.href,
-          user_agent: request.headers.get("user-agent") ?? undefined,
+          user_agent: request.headers.get("user-agent") ?? null,
           ip_hash: ipHash,
-          referrer: request.headers.get("referer") ?? undefined,
+          referrer: request.headers.get("referer") ?? null,
         });
 
         if (error) {
