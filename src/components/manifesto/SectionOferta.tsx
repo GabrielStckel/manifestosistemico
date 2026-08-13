@@ -120,6 +120,7 @@ export function SectionOferta({
 
                   <a
                     href={CHECKOUT_URL}
+                    onClick={handleCheckoutClick("oferta", CHECKOUT_URL)}
                     className="group relative mt-8 flex min-h-[60px] w-full items-center justify-center gap-2 overflow-hidden rounded-cta border border-white/15 bg-gradient-to-b from-red-primary to-red-primary-hover px-5 py-4 text-center text-[14px] font-bold uppercase leading-snug tracking-[0.05em] text-on-red shadow-[0_0_32px_rgba(211,58,52,0.28),0_20px_55px_-18px_var(--red-accent)] transition-all hover:shadow-[0_0_48px_rgba(211,58,52,0.42),0_26px_70px_-16px_var(--red-accent)] hover:brightness-110 active:scale-[0.98] sm:text-[15px] md:text-[15px]"
                   >
                     <span
