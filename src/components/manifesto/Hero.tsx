@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { CampoConstelacao } from "./CampoConstelacao";
 import { Orbe } from "./Orbe";
+import { ContadorOferta } from "./ContadorOferta";
 import type { Hero as HeroType } from "../../content/manifesto.types";
 
 export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
@@ -102,6 +103,10 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
         <p className="mt-5 max-w-[34ch] text-[12px] leading-snug text-muted-foreground md:mt-7 md:max-w-none md:text-[13px]">
           {microtexto}
         </p>
+
+        <div className="mt-8 w-full max-w-[440px] md:mt-10">
+          <ContadorOferta variante="compacto" />
+        </div>
 
       </div>
     </section>
