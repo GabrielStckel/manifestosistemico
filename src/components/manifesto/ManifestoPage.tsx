@@ -1,4 +1,3 @@
-import { Topbar } from "./Topbar";
 import { Hero } from "./Hero";
 import { SectionMentiras } from "./SectionMentiras";
 import { SectionSetenios } from "./SectionSetenios";
