@@ -29,7 +29,7 @@ function calcular(agora: number): Estado {
     minutos: Math.floor((seg % 3600) / 60),
     segundos: seg % 60,
     expirado: restante <= 0,
-    progresso: Number(progresso.toFixed(2)),
+    progresso,
   };
 }
 
