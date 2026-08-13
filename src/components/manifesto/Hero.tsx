@@ -78,13 +78,6 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           <span className="h-px w-10 bg-gradient-to-l from-transparent to-brass/55 md:w-16" />
         </div>
 
-        <p
-          className="mt-6 max-w-[40ch] text-[15px] leading-[1.6] text-section-dark-fg/90 md:mt-8 md:max-w-[52ch] md:text-[17px] md:leading-[1.65]"
-          style={{ textShadow: "var(--text-shadow-soft)" }}
-        >
-          {subtitulo}
-        </p>
-
         <div className="mt-8 w-full max-w-[420px] md:mt-10">
           <ContadorOferta variante="compacto" />
         </div>
@@ -93,7 +86,7 @@ export function Hero({ badge, h1, subtitulo, cta, microtexto }: HeroType) {
           className="mt-8 max-w-[44ch] text-[15.5px] leading-[1.65] text-section-dark-fg/90 md:mt-10 md:max-w-[58ch] md:whitespace-pre-line md:text-[18px] md:leading-[1.65]"
           style={{ textShadow: "var(--text-shadow-soft)" }}
         >
-          Descubra como atualizar os princípios inconscientes que governam suas decisões silenciosamente.
+          {subtitulo}
         </p>
 
         <a
