@@ -1,4 +1,5 @@
 import { Topbar } from "./Topbar";
+import { Hero } from "./Hero";
 import { SectionMentiras } from "./SectionMentiras";
 import { SectionSetenios } from "./SectionSetenios";
 import { SectionParadigma } from "./SectionParadigma";
@@ -27,6 +28,7 @@ export function ManifestoPage({ content }: { content: ManifestoContent }) {
   return (
     <main className="relative">
       <Topbar {...content.topbar} />
+      <Hero {...content.hero} />
 
       {content.sections.map((s, i) => {
         const key = `${s.kind}-${i}`;
