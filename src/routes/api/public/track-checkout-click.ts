@@ -17,7 +17,8 @@ async function sha256(input: string): Promise<string> {
 function getClientIp(request: Request): string {
   const forwarded = request.headers.get("x-forwarded-for");
   if (forwarded) {
-    return forwarded.split(",")[0].trim();
+    const first = forwarded.split(",")[0];
+    return first ? first.trim() : "unknown";
   }
   const realIp = request.headers.get("x-real-ip");
   if (realIp) return realIp;
